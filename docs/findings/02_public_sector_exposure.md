@@ -1,6 +1,6 @@
 # Finding Set 2: Public-Sector Exposure
 
-*Independent research using publicly available data. Not affiliated with McKinsey & Company, Boston Consulting Group or Bain & Company.*
+*Independent analysis using publicly available data. Not affiliated with McKinsey & Company, Boston Consulting Group or Bain & Company.*
 
 ## Question
 How much direct US federal contract work does each firm hold, who buys it, and how has it changed over the decade?

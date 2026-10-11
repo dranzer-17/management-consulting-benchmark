@@ -12,7 +12,7 @@ import { DISCLAIMER, PUBLISHED, REPO_URL, UPDATED, longDate, BASE_PATH } from "@
 export const metadata: Metadata = {
   title: "McKinsey vs BCG vs Bain: a public-data benchmark",
   description: "An independent comparison of scale, US hiring, public-sector contracts and technical emphasis at McKinsey, BCG and Bain, built only from public sources.",
-  alternates: { canonical: `${BASE_PATH}/research` },
+  alternates: { canonical: `${BASE_PATH}/analysis` },
 }
 
 const TOC = [
@@ -72,7 +72,7 @@ export default function Report() {
             </ol>
           </Section>
 
-          <Section id="scope" title="Research questions and scope">
+          <Section id="scope" title="Business questions and scope">
             <p className="prose-report">How have the three firms positioned themselves, and what differentiates their US hiring, geographic presence, capabilities, public-sector exposure and scale? The study covers US filings from FY{fy0} to FY{fy1} and public contracts in four countries. It does not cover client work, private revenue by industry, strategy, or any confidential information.</p>
           </Section>
 
@@ -84,7 +84,7 @@ export default function Report() {
 
           {FINDINGS.map((f) => (
             <Section key={f.slug} id={f.slug} title={`${f.num}. ${f.title}`}>
-              <Label>Research question</Label>
+              <Label>Business question</Label>
               <p className="prose-report">{f.question}</p>
 
               <Label>Metric and definition</Label>

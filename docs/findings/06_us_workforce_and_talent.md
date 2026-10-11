@@ -1,6 +1,6 @@
 # Finding Set 6: US Workforce and Talent Profile (PERM Filings)
 
-*Independent research using publicly available data. Not affiliated with McKinsey & Company, Boston Consulting Group or Bain & Company.*
+*Independent analysis using publicly available data. Not affiliated with McKinsey & Company, Boston Consulting Group or Bain & Company.*
 
 ## Question
 What do government labor-certification filings reveal about each firm's US workforce size, the talent it sponsors for permanent residence, and how consistently it succeeds?

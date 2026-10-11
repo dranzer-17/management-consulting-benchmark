@@ -1,6 +1,6 @@
 # Finding Set 5: Industry Exposure (Proxies Only)
 
-*Independent research using publicly available data. Not affiliated with McKinsey & Company, Boston Consulting Group or Bain & Company.*
+*Independent analysis using publicly available data. Not affiliated with McKinsey & Company, Boston Consulting Group or Bain & Company.*
 
 ## Question
 Can public data show which industries each firm serves?

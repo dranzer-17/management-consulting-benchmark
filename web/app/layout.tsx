@@ -11,11 +11,11 @@ const SITE = "https://big-3-analysis.kavish.tech"
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
-  title: { default: "Kavish Shah | Research", template: "%s | Kavish Shah | Research" },
+  title: { default: "Kavish Shah | Analysis", template: "%s | Kavish Shah | Analysis" },
   description:
-    "Independent, data-driven research built only from public sources. Not affiliated with, or endorsed by, any firm it studies.",
+    "Independent, data-driven analysis built only from public sources. Not affiliated with, or endorsed by, any firm it studies.",
   alternates: { canonical: `${BASE_PATH}` },
-  openGraph: { title: "Kavish Shah | Research", url: `${SITE}${BASE_PATH}`, siteName: "Kavish Shah | Research", type: "website" },
+  openGraph: { title: "Kavish Shah | Analysis", url: `${SITE}${BASE_PATH}`, siteName: "Kavish Shah | Analysis", type: "website" },
 }
 
 export const viewport: Viewport = { width: "device-width", initialScale: 1 }

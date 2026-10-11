@@ -8,7 +8,7 @@ export function Footer() {
       <p>{DISCLAIMER} Findings are descriptive and rest on proxies and, in places, unverified estimates; see each finding’s limitations.</p>
       <p className="mt-3 flex flex-wrap gap-x-8 gap-y-1">
         <span>
-          Research by{" "}
+          Analysis by{" "}
           <a href={PORTFOLIO_URL} target="_blank" rel="noopener noreferrer" className="font-bold text-foreground underline underline-offset-2">Kavish Shah</a>
         </span>
         <span>Published {longDate(PUBLISHED)}</span>

@@ -1,6 +1,6 @@
 # Finding Set 1: Scale and Hiring Footprint
 
-*Independent research using publicly available data. Not affiliated with McKinsey & Company, Boston Consulting Group or Bain & Company.*
+*Independent analysis using publicly available data. Not affiliated with McKinsey & Company, Boston Consulting Group or Bain & Company.*
 
 ## Question
 Using one consistent public source, how do McKinsey, BCG and Bain compare on US hiring activity, growth, geographic footprint and role mix?

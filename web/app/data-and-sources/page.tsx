@@ -3,7 +3,7 @@ import { BASE_PATH } from "@/lib/site"
 import { PageShell, PageTitle } from "@/components/page-shell"
 import { BASIS_LABEL, metrics, sources, summary, table } from "@/lib/data"
 
-export const metadata: Metadata = { title: "Data & Sources", description: "Every source, dataset, scale data point and metric definition behind the research.", alternates: { canonical: `${BASE_PATH}/data-and-sources` } }
+export const metadata: Metadata = { title: "Data & Sources", description: "Every source, dataset, scale data point and metric definition behind the analysis.", alternates: { canonical: `${BASE_PATH}/data-and-sources` } }
 
 const H = ({ id, children }: { id?: string; children: string }) => <h2 id={id} className="mb-3 mt-14 text-2xl font-bold">{children}</h2>
 const th = "py-2 pr-3 text-left font-semibold text-muted-foreground"

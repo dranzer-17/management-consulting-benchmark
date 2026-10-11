@@ -1,6 +1,6 @@
 # Finding Set 7: International Public-Sector Contracts (UK, Canada, Australia)
 
-*Independent research using publicly available data. Not affiliated with McKinsey & Company, Boston Consulting Group or Bain & Company.*
+*Independent analysis using publicly available data. Not affiliated with McKinsey & Company, Boston Consulting Group or Bain & Company.*
 
 ## Question
 Outside the US, how much published public-sector contract work do the firms hold, and how do they differ?

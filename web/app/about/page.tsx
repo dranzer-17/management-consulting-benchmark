@@ -2,12 +2,12 @@ import type { Metadata } from "next"
 import { PageShell, PageTitle } from "@/components/page-shell"
 import { DISCLAIMER, PORTFOLIO_URL, REPO_URL, BASE_PATH } from "@/lib/site"
 
-export const metadata: Metadata = { title: "About", description: "Who produced this research and how independent it is.", alternates: { canonical: `${BASE_PATH}/about` } }
+export const metadata: Metadata = { title: "About", description: "Who produced this analysis and how independent it is.", alternates: { canonical: `${BASE_PATH}/about` } }
 
 export default function About() {
   return (
     <PageShell>
-      <PageTitle title="About this research">
+      <PageTitle title="About this analysis">
         <p>This is an independent analysis by Kavish Shah, a student based in Mumbai, built as a reproducible public-data study of three consulting firms.</p>
       </PageTitle>
       <h2 className="mb-3 mt-10 text-2xl font-bold">Independence</h2>

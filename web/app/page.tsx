@@ -9,7 +9,7 @@ import { DISCLAIMER, REPORT_PATH, REPO_URL, BASE_PATH } from "@/lib/site"
 const FEATURED = ["chart-filings", "chart-technical", "chart-revenue"]
 const allCharts = FINDINGS.flatMap((f) => f.charts)
 
-export const metadata = { title: { absolute: "McKinsey vs BCG vs Bain | Kavish Shah | Research" }, alternates: { canonical: BASE_PATH } }
+export const metadata = { title: { absolute: "McKinsey vs BCG vs Bain | Kavish Shah | Analysis" }, alternates: { canonical: BASE_PATH } }
 
 export default function Home() {
   const [fy0, fy1] = summary.us_filings_fiscal_years
@@ -38,7 +38,7 @@ export default function Home() {
           estimate or a proxy, it is labelled as one.
         </p>
         <p className="mt-6 flex flex-wrap gap-x-7 gap-y-2 text-[17px]">
-          <Link className="link-arrow" href={REPORT_PATH}>Read the research <span aria-hidden>↗</span></Link>
+          <Link className="link-arrow" href={REPORT_PATH}>Read the analysis <span aria-hidden>↗</span></Link>
           <Link className="link-arrow" href="/data-and-sources">Explore the data <span aria-hidden>↗</span></Link>
           <Link className="link-arrow" href="/methodology">View methodology <span aria-hidden>↗</span></Link>
           <a className="link-arrow" href={REPO_URL} target="_blank" rel="noopener noreferrer"><GithubIcon />Source code <span aria-hidden>↗</span></a>
@@ -47,7 +47,7 @@ export default function Home() {
       </div>
 
       <section aria-labelledby="coverage" className="mt-16">
-        <h2 id="coverage" className="text-2xl font-bold">Research coverage</h2>
+        <h2 id="coverage" className="text-2xl font-bold">Analysis coverage</h2>
         <dl className="mt-5 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-border bg-border md:grid-cols-3">
           {coverage.map((c) => (
             <div key={c.l} className="bg-background p-4">
@@ -62,9 +62,9 @@ export default function Home() {
       </section>
 
       <section aria-labelledby="latest" className="mt-16">
-        <h2 id="latest" className="text-2xl font-bold">The research</h2>
+        <h2 id="latest" className="text-2xl font-bold">The analysis</h2>
         <Link href={REPORT_PATH} className="mt-5 block rounded-lg border border-border p-5 transition-colors hover:bg-card">
-          <p className="text-[12px] font-semibold uppercase tracking-[0.12em] text-muted-foreground">Report · {summary.research_dimensions} research dimensions</p>
+          <p className="text-[12px] font-semibold uppercase tracking-[0.12em] text-muted-foreground">Report · {summary.analysis_dimensions} analysis dimensions</p>
           <h3 className="mt-1 text-[19px] font-bold">McKinsey, BCG and Bain: what public data can and cannot show</h3>
           <p className="prose-report mt-2 text-[15px]">US hiring, public-sector contracts, firm scale, technical emphasis and workforce signals, each with its question, definition, evidence and limits.</p>
           <p className="mt-3 text-[15px] font-semibold underline underline-offset-4">Read the report <span aria-hidden>↗</span></p>

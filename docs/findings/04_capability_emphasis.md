@@ -1,6 +1,6 @@
 # Finding Set 4: Capability Emphasis (Technical and Analytical Roles)
 
-*Independent research using publicly available data. Not affiliated with McKinsey & Company, Boston Consulting Group or Bain & Company.*
+*Independent analysis using publicly available data. Not affiliated with McKinsey & Company, Boston Consulting Group or Bain & Company.*
 
 ## Question
 How much do the three firms' US hiring filings lean toward technical and analytical capabilities, and is that changing?

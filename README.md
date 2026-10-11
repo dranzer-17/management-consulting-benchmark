@@ -2,7 +2,7 @@
 
 An independent, consulting-style comparison of McKinsey & Company, Boston Consulting Group (BCG) and Bain & Company, built only from publicly available data.
 
-> **Disclaimer:** This is independent research. It is not affiliated with, endorsed by, or based on any confidential information from McKinsey, BCG or Bain.
+> **Disclaimer:** This is an independent analysis. It is not affiliated with, endorsed by, or based on any confidential information from McKinsey, BCG or Bain.
 
 ## Central question
 How have the three firms positioned themselves over the past decade, and what differentiates their growth, geographic presence, industry exposure, capabilities and strategic priorities?
@@ -42,7 +42,7 @@ Read these as descriptive findings. H-1B filings are a proxy for US hiring, not 
 Each write-up states its data, method, findings and limitations. Every source is logged in [sources.md](sources.md) and every written claim in [claims.csv](claims.csv), where an automated test checks it against the computed metrics. The method is in [docs/methodology.md](docs/methodology.md).
 
 ## Website
-`web/` is a Next.js site published at `big-3-analysis.kavish.tech` (Home, Research, Methodology, Data & Sources, Reproducibility, About). It reads only the JSON in `web/data/`, which `python -m src.export_web` generates from the pipeline outputs, so no research number is typed into the frontend. Run it with `cd web && npm install && npm run dev`, then open http://localhost:3000. The earlier single-file preview is kept in `web_static_preview/`.
+`web/` is a Next.js site published at `big-3-analysis.kavish.tech` (Home, Analysis, Methodology, Data & Sources, Reproducibility, About). It reads only the JSON in `web/data/`, which `python -m src.export_web` generates from the pipeline outputs, so no research number is typed into the frontend. Run it with `cd web && npm install && npm run dev`, then open http://localhost:3000. The earlier single-file preview is kept in `web_static_preview/`.
 
 ## SQL database
 [`src/build_database.py`](src/build_database.py) loads the clean data into a SQLite star schema ([`sql/schema.sql`](sql/schema.sql)): one firm dimension and three fact tables (H-1B filings, federal awards, firm-scale data points). Analytical queries are in [`sql/queries/`](sql/queries/); `python -m src.run_queries` runs them all. Results match the Python metrics.

@@ -77,7 +77,7 @@ def main():
         "validation_checks_passed": len(validate.PASSED),
         "validation_failures": len(failures),
         "us_filings_fiscal_years": fy_range,
-        "research_dimensions": 8,
+        "analysis_dimensions": 8,
         "downloads": DOWNLOAD_FILES + ["metrics.csv", "claims.csv", "sources.csv"],
     }
     write("summary.json", summary)

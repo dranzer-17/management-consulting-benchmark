@@ -1,6 +1,6 @@
 # Finding Set 3: Firm Scale and Global Reach
 
-*Independent research using publicly available data. Not affiliated with McKinsey & Company, Boston Consulting Group or Bain & Company.*
+*Independent analysis using publicly available data. Not affiliated with McKinsey & Company, Boston Consulting Group or Bain & Company.*
 
 ## Question
 How do the three firms compare on revenue, headcount and global reach, and how well can this be measured from public information?

@@ -7,7 +7,7 @@ import os
 
 REPO = "https://github.com/dranzer-17/management-consulting-benchmark"
 CONTACT = os.environ.get("CONTACT", REPO)
-USER_AGENT = f"management-consulting-benchmark research project ({CONTACT})"
+USER_AGENT = f"management-consulting-benchmark analysis project ({CONTACT})"
 HEADERS = {"User-Agent": USER_AGENT}
 
 from pathlib import Path

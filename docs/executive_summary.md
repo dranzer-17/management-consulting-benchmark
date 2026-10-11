@@ -1,6 +1,6 @@
 # Executive Summary
 
-*Independent research using publicly available data. Not affiliated with McKinsey & Company, Boston Consulting Group or Bain & Company.*
+*Independent analysis using publicly available data. Not affiliated with McKinsey & Company, Boston Consulting Group or Bain & Company.*
 
 ## The question
 How have McKinsey, BCG and Bain positioned themselves competitively, and what differentiates their growth, geographic presence, industry exposure, capabilities and strategic priorities?

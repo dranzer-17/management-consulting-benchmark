@@ -1,6 +1,6 @@
 # Finding Set 8: Publications and Public Attention
 
-*Independent research using publicly available data. Not affiliated with McKinsey & Company, Boston Consulting Group or Bain & Company.*
+*Independent analysis using publicly available data. Not affiliated with McKinsey & Company, Boston Consulting Group or Bain & Company.*
 
 ## Question
 What do the firms publish and how much public attention do they attract, as a signal of strategic emphasis?

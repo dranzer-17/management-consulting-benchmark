@@ -1,5 +1,5 @@
 // Typed access to the JSON the Python pipeline generates (python -m src.export_web). Nothing in the site types a
-// research number by hand: values come from these files and are formatted here.
+// number by hand: values come from these files and are formatted here.
 import metricsJson from "@/data/metrics.json"
 import claimsJson from "@/data/claims.json"
 import sourcesJson from "@/data/sources.json"
@@ -32,7 +32,7 @@ export const summary = summaryJson as unknown as {
   generated_at: string; repo: string; firms: number; sources: number; source_records: number; source_records_note: string
   datasets: { file: string; source_id: string; rows: number }[]; metric_definitions: number; metric_values: number
   claims: number; claims_verified: number; validation_checks_passed: number; validation_failures: number
-  us_filings_fiscal_years: [number, number]; research_dimensions: number; downloads: string[]
+  us_filings_fiscal_years: [number, number]; analysis_dimensions: number; downloads: string[]
 }
 const tables = tablesJson as unknown as Record<string, Row[]>
 

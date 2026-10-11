@@ -10,7 +10,7 @@ const H = ({ children }: { children: string }) => <h2 className="mb-3 mt-12 text
 export default function Reproducibility() {
   return (
     <PageShell>
-      <PageTitle title="Rerun the research yourself">
+      <PageTitle title="Rerun the analysis yourself">
         <p>Everything on this site is regenerated from the repository. These steps need no private knowledge.</p>
       </PageTitle>
 
