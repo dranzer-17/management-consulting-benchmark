@@ -33,7 +33,7 @@ export default function Home() {
           estimate or a proxy, it is labelled as one.
         </p>
         <p className="mt-6 flex flex-wrap gap-x-7 gap-y-2 text-[17px]">
-          <Link className="link-arrow" href="/benchmarks">Read the research <span aria-hidden>↗</span></Link>
+          <Link className="link-arrow" href={REPORT_PATH}>Read the research <span aria-hidden>↗</span></Link>
           <Link className="link-arrow" href="/data-and-sources">Explore the data <span aria-hidden>↗</span></Link>
           <Link className="link-arrow" href="/methodology">View methodology <span aria-hidden>↗</span></Link>
           <a className="link-arrow" href={REPO_URL} target="_blank" rel="noopener noreferrer">Source code <span aria-hidden>↗</span></a>
@@ -57,14 +57,13 @@ export default function Home() {
       </section>
 
       <section aria-labelledby="latest" className="mt-16">
-        <h2 id="latest" className="text-2xl font-bold">Research</h2>
+        <h2 id="latest" className="text-2xl font-bold">The research</h2>
         <Link href={REPORT_PATH} className="mt-5 block rounded-lg border border-border p-5 transition-colors hover:bg-card">
           <p className="text-[12px] font-semibold uppercase tracking-[0.12em] text-muted-foreground">Report · {summary.research_dimensions} research dimensions</p>
           <h3 className="mt-1 text-[19px] font-bold">McKinsey, BCG and Bain: what public data can and cannot show</h3>
           <p className="prose-report mt-2 text-[15px]">US hiring, public-sector contracts, firm scale, technical emphasis and workforce signals, each with its question, definition, evidence and limits.</p>
           <p className="mt-3 text-[15px] font-semibold underline underline-offset-4">Read the report <span aria-hidden>↗</span></p>
         </Link>
-        <p className="mt-4 text-[15px]"><Link href="/benchmarks" className="link-arrow">All research and findings <span aria-hidden>↗</span></Link></p>
       </section>
 
       <section aria-labelledby="featured" className="mt-16">
