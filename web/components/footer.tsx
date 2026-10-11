@@ -6,8 +6,13 @@ export function Footer() {
   return (
     <footer className="border-t border-border px-4 pb-24 pt-8 text-[13px] leading-relaxed text-muted-foreground md:ml-[15.5rem] md:pb-10 md:pl-12 md:pr-10">
       <p>{DISCLAIMER} Findings are descriptive and rest on proxies and, in places, unverified estimates; see each finding’s limitations.</p>
-      <p className="mt-3">
-        Research by Kavish Shah · Published {longDate(PUBLISHED)} · Last updated {longDate(UPDATED)}
+      <p className="mt-3 flex flex-wrap gap-x-8 gap-y-1">
+        <span>
+          Research by{" "}
+          <a href={PORTFOLIO_URL} target="_blank" rel="noopener noreferrer" className="font-bold text-foreground underline underline-offset-2">Kavish Shah</a>
+        </span>
+        <span>Published {longDate(PUBLISHED)}</span>
+        <span>Last updated {longDate(UPDATED)}</span>
       </p>
       <p className="mt-3 flex flex-wrap gap-x-5 gap-y-1">
         <Link href="/methodology" className="underline underline-offset-2">Methodology</Link>
