@@ -2,9 +2,9 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { PageShell, PageTitle } from "@/components/page-shell"
 import { summary } from "@/lib/data"
-import { REPO_URL } from "@/lib/site"
+import { REPO_URL, BASE_PATH } from "@/lib/site"
 
-export const metadata: Metadata = { title: "Methodology", description: "How the data was collected, cleaned, measured and checked.", alternates: { canonical: "/methodology" } }
+export const metadata: Metadata = { title: "Methodology", description: "How the data was collected, cleaned, measured and checked.", alternates: { canonical: `${BASE_PATH}/methodology` } }
 
 const H = ({ children }: { children: string }) => <h2 className="mb-3 mt-12 text-2xl font-bold">{children}</h2>
 

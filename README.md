@@ -42,7 +42,7 @@ Read these as descriptive findings. H-1B filings are a proxy for US hiring, not 
 Each write-up states its data, method, findings and limitations. Every source is logged in [sources.md](sources.md) and every written claim in [claims.csv](claims.csv), where an automated test checks it against the computed metrics. The method is in [docs/methodology.md](docs/methodology.md).
 
 ## Website
-`web/index.html` is a static page (open it through any web server, for example `python -m http.server -d web`) showing the findings, what the study did and did not do, the claims register and the sources. It reads only `web/data.js`, which `python -m src.export_web` generates from the output tables.
+`web/` is a Next.js site published at `research.kavish.tech/mbb` (Home, Research, Methodology, Data & Sources, Reproducibility, About). It reads only the JSON in `web/data/`, which `python -m src.export_web` generates from the pipeline outputs, so no research number is typed into the frontend. Run it with `cd web && npm install && npm run dev`, then open http://localhost:3000/mbb. The earlier single-file preview is kept in `web_static_preview/`.
 
 ## SQL database
 [`src/build_database.py`](src/build_database.py) loads the clean data into a SQLite star schema ([`sql/schema.sql`](sql/schema.sql)): one firm dimension and three fact tables (H-1B filings, federal awards, firm-scale data points). Analytical queries are in [`sql/queries/`](sql/queries/); `python -m src.run_queries` runs them all. Results match the Python metrics.
@@ -62,7 +62,7 @@ Each write-up states its data, method, findings and limitations. Every source is
 │   ├── clean.py  metrics.py  figures.py  validate.py  export_web.py  build_database.py
 │   └── legacy/        Original exploratory scripts, superseded by the pipeline above (not runnable on the current layout)
 ├── tests/             Validation, claim checks, matcher and taxonomy tests
-├── web/               Static website
+├── web/               Next.js website (served under /mbb)
 ├── claims.csv  sources.csv  sources.md  Makefile  requirements.txt
 ```
 

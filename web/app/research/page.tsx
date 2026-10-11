@@ -5,12 +5,12 @@ import { PageShell } from "@/components/page-shell"
 import { BASIS_LABEL, FIRMS, metric, metricRows, summary, type Firm } from "@/lib/data"
 import { NONE_FOUND, fmtMetric } from "@/lib/data"
 import { FINDINGS } from "@/lib/findings"
-import { DISCLAIMER, PUBLISHED, REPO_URL, UPDATED, longDate } from "@/lib/site"
+import { DISCLAIMER, PUBLISHED, REPO_URL, UPDATED, longDate, BASE_PATH } from "@/lib/site"
 
 export const metadata: Metadata = {
   title: "McKinsey vs BCG vs Bain: a public-data benchmark",
   description: "An independent comparison of scale, US hiring, public-sector contracts and technical emphasis at McKinsey, BCG and Bain, built only from public sources.",
-  alternates: { canonical: "/research" },
+  alternates: { canonical: `${BASE_PATH}/research` },
 }
 
 const TOC = [

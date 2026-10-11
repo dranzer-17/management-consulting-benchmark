@@ -3,7 +3,7 @@ import { FindingChart } from "@/components/report-parts"
 import { PageShell } from "@/components/page-shell"
 import { FINDINGS } from "@/lib/findings"
 import { summary } from "@/lib/data"
-import { DISCLAIMER, REPORT_PATH, REPO_URL } from "@/lib/site"
+import { DISCLAIMER, REPORT_PATH, REPO_URL, BASE_PATH } from "@/lib/site"
 
 const FEATURED = ["chart-filings", "chart-technical", "chart-revenue"]
 const allCharts = FINDINGS.flatMap((f) => f.charts)
@@ -91,7 +91,7 @@ export default function Home() {
         <h2 id="downloads" className="text-2xl font-bold">Downloads and source code</h2>
         <ul className="mt-4 space-y-1.5 text-[16px]">
           {summary.downloads.map((f) => (
-            <li key={f}><a className="underline underline-offset-2" href={`/data/${f}`} download>{f}</a></li>
+            <li key={f}><a className="underline underline-offset-2" href={`${BASE_PATH}/data/${f}`} download>{f}</a></li>
           ))}
           <li><a className="underline underline-offset-2" href={REPO_URL} target="_blank" rel="noopener noreferrer">GitHub repository</a></li>
         </ul>

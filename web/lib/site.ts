@@ -1,5 +1,6 @@
 import { summary } from "./data"
 
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? ""
 export const SITE_URL = "https://research.kavish.tech"
 export const REPO_URL = summary.repo
 export const PORTFOLIO_URL = "https://kavish.tech"

@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 import { PageShell, PageTitle } from "@/components/page-shell"
-import { DISCLAIMER, PORTFOLIO_URL, REPO_URL } from "@/lib/site"
+import { DISCLAIMER, PORTFOLIO_URL, REPO_URL, BASE_PATH } from "@/lib/site"
 
-export const metadata: Metadata = { title: "About", description: "Who produced this research and how independent it is.", alternates: { canonical: "/about" } }
+export const metadata: Metadata = { title: "About", description: "Who produced this research and how independent it is.", alternates: { canonical: `${BASE_PATH}/about` } }
 
 export default function About() {
   return (

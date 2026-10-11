@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 import { PageShell, PageTitle } from "@/components/page-shell"
-import { REPO_URL } from "@/lib/site"
+import { REPO_URL, BASE_PATH } from "@/lib/site"
 
-export const metadata: Metadata = { title: "Reproducibility", description: "How to rerun the analysis and the website from a clean checkout.", alternates: { canonical: "/reproducibility" } }
+export const metadata: Metadata = { title: "Reproducibility", description: "How to rerun the analysis and the website from a clean checkout.", alternates: { canonical: `${BASE_PATH}/reproducibility` } }
 
 const H = ({ children }: { children: string }) => <h2 className="mb-3 mt-12 text-2xl font-bold">{children}</h2>
 const Code = ({ children }: { children: string }) => <pre className="my-3 overflow-x-auto rounded-md border border-border bg-card p-4 text-[13px] leading-relaxed">{children}</pre>
@@ -44,7 +44,7 @@ make test        # validation plus every registered claim`}</Code>
       <H>7. Launch the website locally</H>
       <Code>{`cd web
 npm install
-npm run dev      # http://localhost:3000`}</Code>
+npm run dev      # http://localhost:3000/mbb`}</Code>
 
       <H>8. Known limitations and manual steps</H>
       <ul className="prose-report list-disc space-y-2 pl-5 text-[16px]">
