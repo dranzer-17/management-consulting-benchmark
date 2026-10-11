@@ -44,7 +44,7 @@ make test        # validation plus every registered claim`}</CodeBlock>
       <H>7. Launch the website locally</H>
       <CodeBlock>{`cd web
 npm install
-npm run dev      # http://localhost:3000/mbb`}</CodeBlock>
+npm run dev      # http://localhost:3000`}</CodeBlock>
 
       <H>8. Known limitations and manual steps</H>
       <ul className="prose-report list-disc space-y-2 pl-5 text-[16px]">
