@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { BASE_PATH } from "@/lib/site"
 import "./globals.css"
 
-const SITE = "https://mbb-research.kavish.tech"
+const SITE = "https://big-3-analysis.kavish.tech"
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
