@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Design tokens. Palette, fonts and rail layout follow kavish.tech so the two sites read as one family;
+   the research site adds firm identifier colors and an "estimate" tone for charts and tables. */
+:root {
+  --background: #fbf6f0;
+  --foreground: #0d3a35;
+  --card: #f3ede6;
+  --muted: #e8e3dc;
+  --muted-foreground: #4a6b64;
+  --primary: #276152;
+  --primary-foreground: #fbf6f0;
+  --border: rgba(13, 58, 53, 0.15);
+  --border-strong: #0d3a35;
+  --warn: #8a5a00;
+  --warn-bg: #f6ead2;
+
+  /* One identifier color per firm, used everywhere (charts, tags, tables). Chosen to stay distinguishable
+     for color-blind readers and to avoid the firms' own brand colors. */
+  --firm-mckinsey: #1f4e79;
+  --firm-bcg: #276152;
+  --firm-bain: #b4572a;
+}
+
+.dark {
+  --background: #0d3a35;
+  --foreground: #fbf6f0;
+  --card: #143d38;
+  --muted: #1a4a44;
+  --muted-foreground: #b1b7ab;
+  --primary: #7ab5a8;
+  --primary-foreground: #0d3a35;
+  --border: rgba(251, 246, 240, 0.18);
+  --border-strong: #fbf6f0;
+  --warn: #f0c36b;
+  --warn-bg: #2b2a18;
+  --firm-mckinsey: #8fb8e0;
+  --firm-bcg: #7ed1b0;
+  --firm-bain: #f0a070;
+}
+
+@theme inline {
+  --font-sans: "Space Grotesk Variable", system-ui, sans-serif;
+  --font-prose: "DM Sans Variable", system-ui, sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-warn: var(--warn);
+  --color-warn-bg: var(--warn-bg);
+  --color-mckinsey: var(--firm-mckinsey);
+  --color-bcg: var(--firm-bcg);
+  --color-bain: var(--firm-bain);
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+  body { @apply bg-background text-foreground font-sans antialiased; }
+  :focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; border-radius: 2px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+
+/* Long-form text: DM Sans for readability, a ~68ch measure. */
+.prose-report { font-family: "DM Sans Variable", system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.75; max-width: 68ch; color: color-mix(in srgb, var(--foreground) 82%, transparent); }
+.prose-report strong { color: var(--foreground); }
+.prose-report p + p { margin-top: 1.1em; }
+
+/* Underlined arrow link, as on kavish.tech. */
+.link-arrow { @apply inline-flex items-center gap-1.5 font-semibold underline underline-offset-4 decoration-foreground/40 transition-colors hover:decoration-foreground; }

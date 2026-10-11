@@ -9,7 +9,7 @@ import pandas as pd
 
 from src.common import ROOT, TABLES
 
-WEB = ROOT / "web"
+WEB = ROOT / "web_static_preview"   # interim: Phase 2 replaces this with JSON for the Next.js app in web/
 
 
 def frame(path, **kw):
@@ -23,7 +23,7 @@ def main():
             "claims": frame(ROOT / "claims.csv", usecols=["claim_id", "claim", "metric", "source_ids", "method", "limitation", "status"]),
             "sources": frame(ROOT / "sources.csv")}
     (WEB / "data.js").write_text("window.DATA = " + json.dumps(data, separators=(",", ":")) + ";\n")
-    print(f"web/data.js written: {len(data['tables'])} tables, {len(data['metrics'])} metric rows, {len(data['claims'])} claims")
+    print(f"web_static_preview/data.js written: {len(data['tables'])} tables, {len(data['metrics'])} metric rows, {len(data['claims'])} claims")
 
 
 if __name__ == "__main__":
