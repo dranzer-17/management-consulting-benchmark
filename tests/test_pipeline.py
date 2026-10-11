@@ -46,3 +46,14 @@ def test_cagr_formula():
     from src.metrics import cagr
     assert cagr(100, 200, 1) == pytest.approx(1.0)
     assert cagr(100, 121, 2) == pytest.approx(0.10)
+
+
+def test_web_summary_matches_pipeline():
+    """web/data/summary.json is generated from the pipeline; the site must not show counts that disagree with it."""
+    s = json.loads((ROOT / "web" / "data" / "summary.json").read_text())
+    assert s["metric_values"] == len(pd.read_csv(TABLES / "metrics.csv"))
+    assert s["claims"] == len(_claims())
+    assert s["validation_failures"] == 0
+    assert s["source_records"] == sum(d["rows"] for d in s["datasets"])
+    for d in s["datasets"]:
+        assert d["rows"] == len(pd.read_csv(ROOT / "data" / "clean" / d["file"]))

@@ -12,7 +12,8 @@ const icon = (children: ReactNode) => (
 )
 
 export const NAV = [
-  { href: "/", label: "Research", match: ["/", "/benchmarks"], icon: icon(<><path d="M4 19V5" /><path d="M4 19h16" /><path d="M8 15v-4" /><path d="M12 15V8" /><path d="M16 15v-2" /></>) },
+  { href: "/", label: "Home", match: ["/"], icon: icon(<><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></>) },
+  { href: "/benchmarks", label: "Research", match: ["/benchmarks"], icon: icon(<><path d="M4 19V5" /><path d="M4 19h16" /><path d="M8 15v-4" /><path d="M12 15V8" /><path d="M16 15v-2" /></>) },
   { href: "/methodology", label: "Methodology", match: ["/methodology"], icon: icon(<><path d="M9 3h6v5l4.5 9a2 2 0 0 1-1.8 3H6.3a2 2 0 0 1-1.8-3L9 8z" /><path d="M8 3h8" /></>) },
   { href: "/data-and-sources", label: "Data & Sources", match: ["/data-and-sources"], icon: icon(<><ellipse cx="12" cy="5" rx="8" ry="3" /><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5" /><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" /></>) },
   { href: "/reproducibility", label: "Reproducibility", match: ["/reproducibility"], icon: icon(<><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8" /><path d="M21 3v5h-5" /><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16" /><path d="M3 21v-5h5" /></>) },

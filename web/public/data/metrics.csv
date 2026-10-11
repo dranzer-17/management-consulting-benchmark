@@ -1,0 +1,196 @@
+metric_id,set,firm,period,value,unit,basis,definition,numerator,denominator,filters,missing_data,source_ids
+HIRE-001,1,McKinsey,FY2015-2025,5554.0,filings,proxy,Certified H-1B Labor Condition Applications filed by the firm,count of certified LCA filings,n/a,"certified filings, FY2015-2025",none: counted as filed,S1
+HIRE-001,1,BCG,FY2015-2025,4873.0,filings,proxy,Certified H-1B Labor Condition Applications filed by the firm,count of certified LCA filings,n/a,"certified filings, FY2015-2025",none: counted as filed,S1
+HIRE-001,1,Bain,FY2015-2025,1108.0,filings,proxy,Certified H-1B Labor Condition Applications filed by the firm,count of certified LCA filings,n/a,"certified filings, FY2015-2025",none: counted as filed,S1
+HIRE-002,1,McKinsey,FY2016-2024,12.5,% per year,proxy,Compound annual growth rate of certified LCA filings between two endpoint years,filings in FY2024,filings in FY2016,certified filings; endpoint years only,FY2026 excluded as partial,S1
+HIRE-002,1,BCG,FY2016-2024,10.4,% per year,proxy,Compound annual growth rate of certified LCA filings between two endpoint years,filings in FY2024,filings in FY2016,certified filings; endpoint years only,FY2026 excluded as partial,S1
+HIRE-002,1,Bain,FY2016-2024,2.2,% per year,proxy,Compound annual growth rate of certified LCA filings between two endpoint years,filings in FY2024,filings in FY2016,certified filings; endpoint years only,FY2026 excluded as partial,S1
+HIRE-003,1,McKinsey,FY2015-2025,45.0,states,proxy,Distinct US worksite states in certified filings,distinct worksite_state,n/a,"certified filings, FY2015-2025",rows without a state are ignored,S1
+HIRE-003,1,BCG,FY2015-2025,35.0,states,proxy,Distinct US worksite states in certified filings,distinct worksite_state,n/a,"certified filings, FY2015-2025",rows without a state are ignored,S1
+HIRE-003,1,Bain,FY2015-2025,19.0,states,proxy,Distinct US worksite states in certified filings,distinct worksite_state,n/a,"certified filings, FY2015-2025",rows without a state are ignored,S1
+HIRE-004,1,McKinsey,FY2015-2025,155.0,cities,proxy,Distinct US worksite cities in certified filings,distinct worksite_city,n/a,"certified filings, FY2015-2025",rows without a city are ignored,S1
+HIRE-004,1,BCG,FY2015-2025,57.0,cities,proxy,Distinct US worksite cities in certified filings,distinct worksite_city,n/a,"certified filings, FY2015-2025",rows without a city are ignored,S1
+HIRE-004,1,Bain,FY2015-2025,32.0,cities,proxy,Distinct US worksite cities in certified filings,distinct worksite_city,n/a,"certified filings, FY2015-2025",rows without a city are ignored,S1
+HIRE-005,1,McKinsey,FY2015-2025,0.075,index 0-1,proxy,Herfindahl-Hirschman index of the firm's position share across worksite states (higher = more concentrated),sum of squared state shares,total certified positions,"certified filings, FY2015-2025",none,S1
+HIRE-005,1,BCG,FY2015-2025,0.091,index 0-1,proxy,Herfindahl-Hirschman index of the firm's position share across worksite states (higher = more concentrated),sum of squared state shares,total certified positions,"certified filings, FY2015-2025",none,S1
+HIRE-005,1,Bain,FY2015-2025,0.138,index 0-1,proxy,Herfindahl-Hirschman index of the firm's position share across worksite states (higher = more concentrated),sum of squared state shares,total certified positions,"certified filings, FY2015-2025",none,S1
+HIRE-006,1,McKinsey,FY2015-2025,7.9,positions per filing,proxy,"Average number of worker positions requested per filing (all filings, any status)",sum of positions,count of filings,"all statuses, FY2015-2025",missing positions treated as 1,S1
+HIRE-006,1,BCG,FY2015-2025,1.8,positions per filing,proxy,"Average number of worker positions requested per filing (all filings, any status)",sum of positions,count of filings,"all statuses, FY2015-2025",missing positions treated as 1,S1
+HIRE-006,1,Bain,FY2015-2025,2.5,positions per filing,proxy,"Average number of worker positions requested per filing (all filings, any status)",sum of positions,count of filings,"all statuses, FY2015-2025",missing positions treated as 1,S1
+HIRE-007,1,McKinsey,FY2015-2025,150000.0,USD,proxy,Median offered annual base wage,median of annualized wage_rate_of_pay_from,n/a,"certified filings, FY2015-2025; wages outside $30K-$1M dropped",rows with missing or out-of-range wage ignored,S1
+HIRE-007,1,BCG,FY2015-2025,165000.0,USD,proxy,Median offered annual base wage,median of annualized wage_rate_of_pay_from,n/a,"certified filings, FY2015-2025; wages outside $30K-$1M dropped",rows with missing or out-of-range wage ignored,S1
+HIRE-007,1,Bain,FY2015-2025,152000.0,USD,proxy,Median offered annual base wage,median of annualized wage_rate_of_pay_from,n/a,"certified filings, FY2015-2025; wages outside $30K-$1M dropped",rows with missing or out-of-range wage ignored,S1
+HIRE-008,1,McKinsey,FY2015-2025,99.0,%,proxy,Share of filings certified,certified filings,all filings,FY2015-2025,none,S1
+HIRE-008,1,BCG,FY2015-2025,99.1,%,proxy,Share of filings certified,certified filings,all filings,FY2015-2025,none,S1
+HIRE-008,1,Bain,FY2015-2025,93.9,%,proxy,Share of filings certified,certified filings,all filings,FY2015-2025,none,S1
+CAP-001,4,McKinsey,FY2015-2025,35.9,%,proxy,"Share of certified filings in technical occupations (SOC major group 15, computer and mathematical)",certified filings with SOC 15-xxxx,certified filings,"certified, FY2015-2025",none,S1
+CAP-001,4,BCG,FY2015-2025,20.3,%,proxy,"Share of certified filings in technical occupations (SOC major group 15, computer and mathematical)",certified filings with SOC 15-xxxx,certified filings,"certified, FY2015-2025",none,S1
+CAP-001,4,Bain,FY2015-2025,5.2,%,proxy,"Share of certified filings in technical occupations (SOC major group 15, computer and mathematical)",certified filings with SOC 15-xxxx,certified filings,"certified, FY2015-2025",none,S1
+CAP-002,4,McKinsey,FY2015-2019,31.8,%,proxy,"Technical share of certified filings, early period",technical certified filings,certified filings,"certified, FY2015-2019",none,S1
+CAP-002,4,BCG,FY2015-2019,14.5,%,proxy,"Technical share of certified filings, early period",technical certified filings,certified filings,"certified, FY2015-2019",none,S1
+CAP-002,4,Bain,FY2015-2019,1.6,%,proxy,"Technical share of certified filings, early period",technical certified filings,certified filings,"certified, FY2015-2019",none,S1
+CAP-003,4,McKinsey,FY2021-2025,38.0,%,proxy,"Technical share of certified filings, late period (FY2020 skipped as a pandemic transition year)",technical certified filings,certified filings,"certified, FY2021-2025",none,S1
+CAP-003,4,BCG,FY2021-2025,24.0,%,proxy,"Technical share of certified filings, late period (FY2020 skipped as a pandemic transition year)",technical certified filings,certified filings,"certified, FY2021-2025",none,S1
+CAP-003,4,Bain,FY2021-2025,8.8,%,proxy,"Technical share of certified filings, late period (FY2020 skipped as a pandemic transition year)",technical certified filings,certified filings,"certified, FY2021-2025",none,S1
+CAP-004,4,McKinsey,FY2015-2025,56.7,%,proxy,Share of certified filings classified as Management Analysts (SOC 13-1111),filings with SOC 13-1111,certified filings,"certified, FY2015-2025",none,S1
+CAP-004,4,BCG,FY2015-2025,72.0,%,proxy,Share of certified filings classified as Management Analysts (SOC 13-1111),filings with SOC 13-1111,certified filings,"certified, FY2015-2025",none,S1
+CAP-004,4,Bain,FY2015-2025,91.2,%,proxy,Share of certified filings classified as Management Analysts (SOC 13-1111),filings with SOC 13-1111,certified filings,"certified, FY2015-2025",none,S1
+WORK-001,6,McKinsey,FY2015-2026,1868.0,filings,proxy,PERM labor-certification filings,count of filings,n/a,all years incl. partial FY2026,none,S1
+WORK-001,6,BCG,FY2015-2026,1508.0,filings,proxy,PERM labor-certification filings,count of filings,n/a,all years incl. partial FY2026,none,S1
+WORK-001,6,Bain,FY2015-2026,419.0,filings,proxy,PERM labor-certification filings,count of filings,n/a,all years incl. partial FY2026,none,S1
+WORK-002,6,McKinsey,FY2024,9000.0,employees,reported-on-form,"Largest US employee count reported by the firm on any PERM filing in the year (filer-defined, unaudited)",max(employer_num_employees),n/a,FY2016-2024; FY2015 BCG (503) and FY2025+ excluded,filings without a value ignored,S1
+WORK-002,6,BCG,FY2024,7780.0,employees,reported-on-form,"Largest US employee count reported by the firm on any PERM filing in the year (filer-defined, unaudited)",max(employer_num_employees),n/a,FY2016-2024; FY2015 BCG (503) and FY2025+ excluded,filings without a value ignored,S1
+WORK-002,6,Bain,FY2024,3900.0,employees,reported-on-form,"Largest US employee count reported by the firm on any PERM filing in the year (filer-defined, unaudited)",max(employer_num_employees),n/a,FY2016-2024; FY2015 BCG (503) and FY2025+ excluded,filings without a value ignored,S1
+WORK-003,6,McKinsey,FY2016,7000.0,employees,reported-on-form,As WORK-002 for FY2016,max(employer_num_employees),n/a,FY2016,filings without a value ignored,S1
+WORK-003,6,BCG,FY2016,3800.0,employees,reported-on-form,As WORK-002 for FY2016,max(employer_num_employees),n/a,FY2016,filings without a value ignored,S1
+WORK-003,6,Bain,FY2016,2100.0,employees,reported-on-form,As WORK-002 for FY2016,max(employer_num_employees),n/a,FY2016,filings without a value ignored,S1
+WORK-004,6,McKinsey,FY2016-2024,3.2,% per year,reported-on-form,Compound annual growth of WORK-002/WORK-003 endpoints,WORK-002,WORK-003,endpoint years,none,S1
+WORK-004,6,BCG,FY2016-2024,9.4,% per year,reported-on-form,Compound annual growth of WORK-002/WORK-003 endpoints,WORK-002,WORK-003,endpoint years,none,S1
+WORK-004,6,Bain,FY2016-2024,8.0,% per year,reported-on-form,Compound annual growth of WORK-002/WORK-003 endpoints,WORK-002,WORK-003,endpoint years,none,S1
+WORK-005,6,McKinsey,FY2015-2026,98.1,%,proxy,Share of PERM cases certified,cases with outcome CERTIFIED,all cases,all years,none,S1
+WORK-005,6,BCG,FY2015-2026,85.3,%,proxy,Share of PERM cases certified,cases with outcome CERTIFIED,all cases,all years,none,S1
+WORK-005,6,Bain,FY2015-2026,88.5,%,proxy,Share of PERM cases certified,cases with outcome CERTIFIED,all cases,all years,none,S1
+WORK-006,6,McKinsey,FY2015-2026,1.4,%,proxy,Share of PERM cases withdrawn,cases with outcome WITHDRAWN,all cases,all years,none,S1
+WORK-006,6,BCG,FY2015-2026,14.1,%,proxy,Share of PERM cases withdrawn,cases with outcome WITHDRAWN,all cases,all years,none,S1
+WORK-006,6,Bain,FY2015-2026,10.7,%,proxy,Share of PERM cases withdrawn,cases with outcome WITHDRAWN,all cases,all years,none,S1
+WORK-007,6,McKinsey,FY2015-2026,36.5,%,proxy,Share of sponsored workers who are citizens of India,filings with citizenship India,filings with a citizenship value,all years,filings with blank citizenship excluded from the denominator,S1
+WORK-007,6,BCG,FY2015-2026,30.0,%,proxy,Share of sponsored workers who are citizens of India,filings with citizenship India,filings with a citizenship value,all years,filings with blank citizenship excluded from the denominator,S1
+WORK-007,6,Bain,FY2015-2026,21.5,%,proxy,Share of sponsored workers who are citizens of India,filings with citizenship India,filings with a citizenship value,all years,filings with blank citizenship excluded from the denominator,S1
+WORK-008,6,McKinsey,FY2015-2026,85.0,citizenships,proxy,Distinct citizenships among sponsored workers,distinct citizenship values,n/a,all years,blank ignored,S1
+WORK-008,6,BCG,FY2015-2026,82.0,citizenships,proxy,Distinct citizenships among sponsored workers,distinct citizenship values,n/a,all years,blank ignored,S1
+WORK-008,6,Bain,FY2015-2026,44.0,citizenships,proxy,Distinct citizenships among sponsored workers,distinct citizenship values,n/a,all years,blank ignored,S1
+WORK-009,6,McKinsey,FY2015-2026,88.5,%,proxy,Share of filings stating a Master's minimum education,filings with minimum_education Master's,filings with a minimum_education value,all years,blank excluded from the denominator,S1
+WORK-009,6,BCG,FY2015-2026,17.5,%,proxy,Share of filings stating a Master's minimum education,filings with minimum_education Master's,filings with a minimum_education value,all years,blank excluded from the denominator,S1
+WORK-009,6,Bain,FY2015-2026,85.3,%,proxy,Share of filings stating a Master's minimum education,filings with minimum_education Master's,filings with a minimum_education value,all years,blank excluded from the denominator,S1
+WORK-010,6,McKinsey,FY2015-2026,81.2,%,proxy,Share of filings naming a business major,filings whose major matches /business/,filings with a major value,all years,blank major excluded from the denominator,S1
+WORK-010,6,BCG,FY2015-2026,86.3,%,proxy,Share of filings naming a business major,filings whose major matches /business/,filings with a major value,all years,blank major excluded from the denominator,S1
+WORK-010,6,Bain,FY2015-2026,97.1,%,proxy,Share of filings naming a business major,filings whose major matches /business/,filings with a major value,all years,blank major excluded from the denominator,S1
+WORK-011,6,McKinsey,FY2015-2026,14.4,%,proxy,Share of filings naming a quantitative or engineering major,filings whose major matches /engineering|quantitative|stat|math|operations|analytics/,filings with a major value,all years,blank major excluded from the denominator,S1
+WORK-011,6,BCG,FY2015-2026,5.4,%,proxy,Share of filings naming a quantitative or engineering major,filings whose major matches /engineering|quantitative|stat|math|operations|analytics/,filings with a major value,all years,blank major excluded from the denominator,S1
+WORK-011,6,Bain,FY2015-2026,2.6,%,proxy,Share of filings naming a quantitative or engineering major,filings whose major matches /engineering|quantitative|stat|math|operations|analytics/,filings with a major value,all years,blank major excluded from the denominator,S1
+FED-001,2,McKinsey,FY2015-2024,188.0,awards,reported,Federal prime contract awards to the firm,count of awards,n/a,"prime contracts, award start FY2015-2024, value > 0",zero-value awards excluded,S2
+FED-001,2,BCG,FY2015-2024,127.0,awards,reported,Federal prime contract awards to the firm,count of awards,n/a,"prime contracts, award start FY2015-2024, value > 0",zero-value awards excluded,S2
+FED-001,2,Bain,FY2015-2024,0.0,awards,reported,Federal prime contract awards to the firm,count of awards,n/a,"prime contracts, award start FY2015-2024, value > 0",zero-value awards excluded,S2
+FED-002,2,McKinsey,FY2015-2024,761.8,USD millions,reported,"Total value of federal prime contract awards, attributed to start year",sum of award_usd,n/a,"prime contracts, award start FY2015-2024, value > 0",zero-value awards excluded,S2
+FED-002,2,BCG,FY2015-2024,825.9,USD millions,reported,"Total value of federal prime contract awards, attributed to start year",sum of award_usd,n/a,"prime contracts, award start FY2015-2024, value > 0",zero-value awards excluded,S2
+FED-002,2,Bain,FY2015-2024,0.0,USD millions,reported,"Total value of federal prime contract awards, attributed to start year",sum of award_usd,n/a,"prime contracts, award start FY2015-2024, value > 0",zero-value awards excluded,S2
+FED-003,2,McKinsey,FY2015-2024,1.73,USD millions,reported,Median award value,median award_usd,n/a,"prime contracts, award start FY2015-2024, value > 0",none,S2
+FED-003,2,BCG,FY2015-2024,2.64,USD millions,reported,Median award value,median award_usd,n/a,"prime contracts, award start FY2015-2024, value > 0",none,S2
+FED-004,2,McKinsey,FY2015-2024,48.8,USD millions,reported,Largest single award,max award_usd,n/a,"prime contracts, award start FY2015-2024, value > 0",none,S2
+FED-004,2,BCG,FY2015-2024,77.1,USD millions,reported,Largest single award,max award_usd,n/a,"prime contracts, award start FY2015-2024, value > 0",none,S2
+FED-005,2,McKinsey,FY2015-2024,53.1,%,reported,Share of contract value awarded by the Department of Defense,value from DoD,total value,"prime contracts, award start FY2015-2024, value > 0",none,S2
+FED-005,2,BCG,FY2015-2024,68.3,%,reported,Share of contract value awarded by the Department of Defense,value from DoD,total value,"prime contracts, award start FY2015-2024, value > 0",none,S2
+FED-006,2,McKinsey,FY2015-2024,19.0,agencies,reported,Distinct awarding agencies,distinct agency,n/a,"prime contracts, award start FY2015-2024, value > 0",none,S2
+FED-006,2,BCG,FY2015-2024,10.0,agencies,reported,Distinct awarding agencies,distinct agency,n/a,"prime contracts, award start FY2015-2024, value > 0",none,S2
+FED-007,2,Bain,FY2015-2024,0.0,awards,reported,Federal prime contract awards found for Bain & Company (none found is not proof of no public-sector work),count of awards,n/a,"prime contracts, award start FY2015-2024, value > 0",n/a,S2
+FED-008,2,McKinsey,FY2015-2024,128.0,subawards,reported,Federal subawards where the firm is the subcontractor,count of subawards,n/a,subaward fiscal year FY2015-2024,none,S2
+FED-008,2,BCG,FY2015-2024,55.0,subawards,reported,Federal subawards where the firm is the subcontractor,count of subawards,n/a,subaward fiscal year FY2015-2024,none,S2
+FED-008,2,Bain,FY2015-2024,3.0,subawards,reported,Federal subawards where the firm is the subcontractor,count of subawards,n/a,subaward fiscal year FY2015-2024,none,S2
+FED-009,2,McKinsey,FY2015-2024,1055.5,USD millions,reported,Total value of federal subawards to the firm,sum of amount_usd,n/a,subaward fiscal year FY2015-2024,none,S2
+FED-009,2,BCG,FY2015-2024,106.8,USD millions,reported,Total value of federal subawards to the firm,sum of amount_usd,n/a,subaward fiscal year FY2015-2024,none,S2
+FED-009,2,Bain,FY2015-2024,8.4,USD millions,reported,Total value of federal subawards to the firm,sum of amount_usd,n/a,subaward fiscal year FY2015-2024,none,S2
+SCALE-001,3,BCG,2018-2025,9.8,% per year,reported,Compound annual growth of reported global revenue,2025 revenue,2018 revenue,reported points only,no interpolation,S3
+SCALE-002,3,BCG,2018-2025,8.9,% per year,reported,Compound annual growth of reported global headcount,2025 headcount,2018 headcount,reported points only,no interpolation,S3
+SCALE-003,3,BCG,2018-2023,11.6,% per year,reported,Compound annual growth of global headcount,2023 headcount,2018 headcount,both endpoints required,no interpolation,S3
+SCALE-003,3,McKinsey,2018-2023,10.0,% per year,estimated,Compound annual growth of global headcount,2023 headcount,2018 headcount,both endpoints required,no interpolation,S3
+SCALE-004,3,McKinsey,2023,356.0,USD thousand per employee,estimated,Revenue per employee,2023 revenue,2023 headcount,both values required,no interpolation,S3
+SCALE-005,3,McKinsey,2023,16.0,USD billion,estimated,Global revenue,n/a,n/a,2023,none,S3
+SCALE-006,3,McKinsey,2023,45000.0,employees,estimated,Global headcount,n/a,n/a,2023,none,S3
+SCALE-004,3,BCG,2023,384.0,USD thousand per employee,reported,Revenue per employee,2023 revenue,2023 headcount,both values required,no interpolation,S3
+SCALE-005,3,BCG,2023,12.3,USD billion,reported,Global revenue,n/a,n/a,2023,none,S3
+SCALE-006,3,BCG,2023,32000.0,employees,reported,Global headcount,n/a,n/a,2023,none,S3
+SCALE-004,3,Bain,2023,316.0,USD thousand per employee,estimated,Revenue per employee,2023 revenue,2023 headcount,both values required,no interpolation,S3
+SCALE-005,3,Bain,2023,6.0,USD billion,estimated,Global revenue,n/a,n/a,2023,none,S3
+SCALE-006,3,Bain,2023,19000.0,employees,estimated,Global headcount,n/a,n/a,2023,none,S3
+SCALE-007,3,McKinsey,2017-2025,0.0,data points,n/a,Number of reported (firm- or regulator-published) scale data points collected,count of rows with type=reported,n/a,firm_scale_points.csv,n/a,S3
+SCALE-008,3,McKinsey,2017-2025,0.0,data points,n/a,Number of scale data points verified by opening the source page,count of rows with verified=yes,n/a,firm_scale_points.csv,n/a,S3
+SCALE-007,3,BCG,2017-2025,18.0,data points,n/a,Number of reported (firm- or regulator-published) scale data points collected,count of rows with type=reported,n/a,firm_scale_points.csv,n/a,S3
+SCALE-008,3,BCG,2017-2025,18.0,data points,n/a,Number of scale data points verified by opening the source page,count of rows with verified=yes,n/a,firm_scale_points.csv,n/a,S3
+SCALE-007,3,Bain,2017-2025,5.0,data points,n/a,Number of reported (firm- or regulator-published) scale data points collected,count of rows with type=reported,n/a,firm_scale_points.csv,n/a,S3
+SCALE-008,3,Bain,2017-2025,2.0,data points,n/a,Number of scale data points verified by opening the source page,count of rows with verified=yes,n/a,firm_scale_points.csv,n/a,S3
+OFFICE-001,3,BCG,snapshot Oct 2026,110.0,city office pages,proxy,Core city office pages listed in the firm's public sitemap (excludes sub-brand offices; not audited),count of core office city pages,n/a,BCG and Bain only; McKinsey site unreachable,McKinsey not covered,S4
+OFFICE-001,3,Bain,snapshot Oct 2026,69.0,city office pages,proxy,Core city office pages listed in the firm's public sitemap (excludes sub-brand offices; not audited),count of core office city pages,n/a,BCG and Bain only; McKinsey site unreachable,McKinsey not covered,S4
+OFFICE-002,3,BCG,snapshot Oct 2026,31.0,city office pages,proxy,Core office city pages in region: Asia-Pacific,count,n/a,mapped via taxonomy.REGION,unmapped pages ignored,S4
+OFFICE-002,3,BCG,snapshot Oct 2026,29.0,city office pages,proxy,Core office city pages in region: Europe,count,n/a,mapped via taxonomy.REGION,unmapped pages ignored,S4
+OFFICE-002,3,BCG,snapshot Oct 2026,8.0,city office pages,proxy,Core office city pages in region: Latin America,count,n/a,mapped via taxonomy.REGION,unmapped pages ignored,S4
+OFFICE-002,3,BCG,snapshot Oct 2026,12.0,city office pages,proxy,Core office city pages in region: Middle East and Africa,count,n/a,mapped via taxonomy.REGION,unmapped pages ignored,S4
+OFFICE-002,3,BCG,snapshot Oct 2026,23.0,city office pages,proxy,Core office city pages in region: North America,count,n/a,mapped via taxonomy.REGION,unmapped pages ignored,S4
+OFFICE-002,3,Bain,snapshot Oct 2026,18.0,city office pages,proxy,Core office city pages in region: Asia-Pacific,count,n/a,mapped via taxonomy.REGION,unmapped pages ignored,S4
+OFFICE-002,3,Bain,snapshot Oct 2026,23.0,city office pages,proxy,Core office city pages in region: Europe,count,n/a,mapped via taxonomy.REGION,unmapped pages ignored,S4
+OFFICE-002,3,Bain,snapshot Oct 2026,7.0,city office pages,proxy,Core office city pages in region: Latin America,count,n/a,mapped via taxonomy.REGION,unmapped pages ignored,S4
+OFFICE-002,3,Bain,snapshot Oct 2026,5.0,city office pages,proxy,Core office city pages in region: Middle East and Africa,count,n/a,mapped via taxonomy.REGION,unmapped pages ignored,S4
+OFFICE-002,3,Bain,snapshot Oct 2026,16.0,city office pages,proxy,Core office city pages in region: North America,count,n/a,mapped via taxonomy.REGION,unmapped pages ignored,S4
+IND-001,5,McKinsey,2015-2025,21583.0,filings,proxy,SEC filings (all forms) whose text names the firm,count of distinct filings,n/a,2015-2025,none,S5
+IND-001,5,BCG,2015-2025,10065.0,filings,proxy,SEC filings (all forms) whose text names the firm,count of distinct filings,n/a,2015-2025,none,S5
+IND-001,5,Bain,2015-2025,9506.0,filings,proxy,SEC filings (all forms) whose text names the firm,count of distinct filings,n/a,2015-2025,none,S5
+IND-002,5,McKinsey,2015-2025,7486.0,filings,proxy,"Operating-company SEC filings naming the firm (10-K, 8-K, S-1, 20-F, S-4, DRS, 10-Q; excl. funds, blank checks, investment vehicles)",count of distinct filings,n/a,"operating forms, mapped industry",filings with no SIC excluded,S5
+IND-002,5,BCG,2015-2025,3276.0,filings,proxy,"Operating-company SEC filings naming the firm (10-K, 8-K, S-1, 20-F, S-4, DRS, 10-Q; excl. funds, blank checks, investment vehicles)",count of distinct filings,n/a,"operating forms, mapped industry",filings with no SIC excluded,S5
+IND-002,5,Bain,2015-2025,2893.0,filings,proxy,"Operating-company SEC filings naming the firm (10-K, 8-K, S-1, 20-F, S-4, DRS, 10-Q; excl. funds, blank checks, investment vehicles)",count of distinct filings,n/a,"operating forms, mapped industry",filings with no SIC excluded,S5
+IND-003,5,McKinsey,2015-2025,1765.0,filers,proxy,Distinct operating-company filers naming the firm,distinct cik,n/a,as IND-002,none,S5
+IND-003,5,BCG,2015-2025,872.0,filers,proxy,Distinct operating-company filers naming the firm,distinct cik,n/a,as IND-002,none,S5
+IND-003,5,Bain,2015-2025,707.0,filers,proxy,Distinct operating-company filers naming the firm,distinct cik,n/a,as IND-002,none,S5
+IND-004,5,McKinsey,2015-2025,0.177,index 0-1,proxy,HHI of industry mix of operating-company filings naming the firm,sum of squared industry shares,total filings,as IND-002,none,S5
+IND-004,5,BCG,2015-2025,0.176,index 0-1,proxy,HHI of industry mix of operating-company filings naming the firm,sum of squared industry shares,total filings,as IND-002,none,S5
+IND-004,5,Bain,2015-2025,0.173,index 0-1,proxy,HHI of industry mix of operating-company filings naming the firm,sum of squared industry shares,total filings,as IND-002,none,S5
+IND-005,5,McKinsey,2015-2025,10.1,%,proxy,"Share of operating filings naming the firm that are by filers in: Consumer, retail and leisure",filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,McKinsey,2015-2025,4.1,%,proxy,"Share of operating filings naming the firm that are by filers in: Energy, utilities and resources",filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,McKinsey,2015-2025,12.5,%,proxy,Share of operating filings naming the firm that are by filers in: Financial services and real estate,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,McKinsey,2015-2025,26.6,%,proxy,Share of operating filings naming the firm that are by filers in: Healthcare and pharma,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,McKinsey,2015-2025,16.2,%,proxy,Share of operating filings naming the firm that are by filers in: Industrials and transport,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,McKinsey,2015-2025,7.6,%,proxy,Share of operating filings naming the firm that are by filers in: Other,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,McKinsey,2015-2025,1.2,%,proxy,Share of operating filings naming the firm that are by filers in: Professional services,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,McKinsey,2015-2025,0.0,%,proxy,Share of operating filings naming the firm that are by filers in: Public sector,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,McKinsey,2015-2025,21.6,%,proxy,Share of operating filings naming the firm that are by filers in: Technology and telecom,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,BCG,2015-2025,13.3,%,proxy,"Share of operating filings naming the firm that are by filers in: Consumer, retail and leisure",filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,BCG,2015-2025,2.1,%,proxy,"Share of operating filings naming the firm that are by filers in: Energy, utilities and resources",filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,BCG,2015-2025,9.4,%,proxy,Share of operating filings naming the firm that are by filers in: Financial services and real estate,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,BCG,2015-2025,25.5,%,proxy,Share of operating filings naming the firm that are by filers in: Healthcare and pharma,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,BCG,2015-2025,19.7,%,proxy,Share of operating filings naming the firm that are by filers in: Industrials and transport,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,BCG,2015-2025,9.1,%,proxy,Share of operating filings naming the firm that are by filers in: Other,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,BCG,2015-2025,1.7,%,proxy,Share of operating filings naming the firm that are by filers in: Professional services,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,BCG,2015-2025,0.0,%,proxy,Share of operating filings naming the firm that are by filers in: Public sector,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,BCG,2015-2025,19.1,%,proxy,Share of operating filings naming the firm that are by filers in: Technology and telecom,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,Bain,2015-2025,13.0,%,proxy,"Share of operating filings naming the firm that are by filers in: Consumer, retail and leisure",filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,Bain,2015-2025,2.5,%,proxy,"Share of operating filings naming the firm that are by filers in: Energy, utilities and resources",filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,Bain,2015-2025,9.5,%,proxy,Share of operating filings naming the firm that are by filers in: Financial services and real estate,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,Bain,2015-2025,19.6,%,proxy,Share of operating filings naming the firm that are by filers in: Healthcare and pharma,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,Bain,2015-2025,20.8,%,proxy,Share of operating filings naming the firm that are by filers in: Industrials and transport,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,Bain,2015-2025,10.1,%,proxy,Share of operating filings naming the firm that are by filers in: Other,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,Bain,2015-2025,1.2,%,proxy,Share of operating filings naming the firm that are by filers in: Professional services,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,Bain,2015-2025,0.0,%,proxy,Share of operating filings naming the firm that are by filers in: Public sector,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-005,5,Bain,2015-2025,23.3,%,proxy,Share of operating filings naming the firm that are by filers in: Technology and telecom,filings in industry,all operating filings naming the firm,as IND-002,none,S5
+IND-006,5,BCG,snapshot Oct 2026,170.0,pages,proxy,"Pages under the firm's industry section (publication emphasis, not revenue)",count,n/a,"BCG /industries, Bain /industry-expertise",McKinsey not covered,S4
+IND-007,5,BCG,snapshot Oct 2026,292.0,pages,proxy,"Pages under the firm's capability/services section (publication emphasis, not revenue)",count,n/a,"BCG /capabilities, Bain /consulting-services",McKinsey not covered,S4
+IND-006,5,Bain,snapshot Oct 2026,121.0,pages,proxy,"Pages under the firm's industry section (publication emphasis, not revenue)",count,n/a,"BCG /industries, Bain /industry-expertise",McKinsey not covered,S4
+IND-007,5,Bain,snapshot Oct 2026,163.0,pages,proxy,"Pages under the firm's capability/services section (publication emphasis, not revenue)",count,n/a,"BCG /capabilities, Bain /consulting-services",McKinsey not covered,S4
+INTL-001,7,McKinsey,2015-2025,135.0,awards,reported,"UK public-sector contract awards to the firm (Contracts Finder), excluding framework ceilings",count of awarded notices,n/a,award year 2015-2025; value < GBP 50M,frameworks excluded,S6
+INTL-001,7,BCG,2015-2025,108.0,awards,reported,"UK public-sector contract awards to the firm (Contracts Finder), excluding framework ceilings",count of awarded notices,n/a,award year 2015-2025; value < GBP 50M,frameworks excluded,S6
+INTL-001,7,Bain,2015-2025,0.0,awards,reported,"UK public-sector contract awards to the firm (Contracts Finder), excluding framework ceilings",count of awarded notices,n/a,award year 2015-2025; value < GBP 50M,frameworks excluded,S6
+INTL-002,7,McKinsey,2015-2025,307.7,GBP millions,reported,"Total awarded value, excluding framework ceilings",sum of value_gbp,n/a,as INTL-001,missing values ignored,S6
+INTL-002,7,BCG,2015-2025,269.8,GBP millions,reported,"Total awarded value, excluding framework ceilings",sum of value_gbp,n/a,as INTL-001,missing values ignored,S6
+INTL-002,7,Bain,2015-2025,0.0,GBP millions,reported,"Total awarded value, excluding framework ceilings",sum of value_gbp,n/a,as INTL-001,missing values ignored,S6
+INTL-003,7,McKinsey,2015-2025,7.0,awards,reported,"Framework-agreement notices at or above GBP 50M (ceiling values, not spend)",count,n/a,value >= GBP 50M,n/a,S6
+INTL-003,7,BCG,2015-2025,6.0,awards,reported,"Framework-agreement notices at or above GBP 50M (ceiling values, not spend)",count,n/a,value >= GBP 50M,n/a,S6
+INTL-003,7,Bain,2015-2025,0.0,awards,reported,"Framework-agreement notices at or above GBP 50M (ceiling values, not spend)",count,n/a,value >= GBP 50M,n/a,S6
+INTL-004,7,McKinsey,2015-2025,34.0,contracts,reported,Canadian federal contracts over CAD 10K to the firm,count of contract records,n/a,contract year 2015-2025,none,S7
+INTL-004,7,BCG,2015-2025,15.0,contracts,reported,Canadian federal contracts over CAD 10K to the firm,count of contract records,n/a,contract year 2015-2025,none,S7
+INTL-004,7,Bain,2015-2025,0.0,contracts,reported,Canadian federal contracts over CAD 10K to the firm,count of contract records,n/a,contract year 2015-2025,none,S7
+INTL-005,7,McKinsey,2015-2025,120.8,CAD millions,reported,Total contract value (including amendments as reported),sum of value_cad,n/a,contract year 2015-2025,missing ignored,S7
+INTL-005,7,BCG,2015-2025,44.6,CAD millions,reported,Total contract value (including amendments as reported),sum of value_cad,n/a,contract year 2015-2025,missing ignored,S7
+INTL-005,7,Bain,2015-2025,0.0,CAD millions,reported,Total contract value (including amendments as reported),sum of value_cad,n/a,contract year 2015-2025,missing ignored,S7
+INTL-006,7,McKinsey,2015-2025,15.0,contracts,reported,Australian federal contract notices to the firm (AusTender),count of contract notices,n/a,signed 2015-2025,none,S8
+INTL-006,7,BCG,2015-2025,195.0,contracts,reported,Australian federal contract notices to the firm (AusTender),count of contract notices,n/a,signed 2015-2025,none,S8
+INTL-006,7,Bain,2015-2025,0.0,contracts,reported,Australian federal contract notices to the firm (AusTender),count of contract notices,n/a,signed 2015-2025,none,S8
+INTL-007,7,McKinsey,2015-2025,21.2,AUD millions,reported,Total notified contract value,sum of value_aud,n/a,signed 2015-2025,missing ignored,S8
+INTL-007,7,BCG,2015-2025,284.4,AUD millions,reported,Total notified contract value,sum of value_aud,n/a,signed 2015-2025,missing ignored,S8
+INTL-007,7,Bain,2015-2025,0.0,AUD millions,reported,Total notified contract value,sum of value_aud,n/a,signed 2015-2025,missing ignored,S8
+PUB-001,8,BCG,2013,202.0,publication pages,proxy,BCG publication pages dated 2013 in the URL,count of /publications/2013/ URLs,n/a,sitemap snapshot Oct 2026,undated pages not counted,S4
+PUB-002,8,BCG,2025,650.0,publication pages,proxy,BCG publication pages dated 2025 in the URL,count of /publications/2025/ URLs,n/a,sitemap snapshot Oct 2026,undated pages not counted,S4
+PUB-003,8,BCG,2019,3.4,%,proxy,Share of BCG publication pages whose URL slug names AI/GenAI,pages with an AI term in the slug,all dated pages that year,slug keyword match,pages without AI in slug count as non-AI,S4
+PUB-004,8,BCG,2025,18.5,%,proxy,Share of BCG publication pages whose URL slug names AI/GenAI,pages with an AI term in the slug,all dated pages that year,slug keyword match,pages without AI in slug count as non-AI,S4
+PUB-005,8,BCG,2025,120.0,pages,proxy,BCG publication pages with an AI term in the slug,count,n/a,2025,none,S4
+PUB-006,8,McKinsey,2010-2025,799.0,works,reported,Scholarly works with a firm affiliation recorded in OpenAlex,count,n/a,2010-2025,Bain has no OpenAlex institution record,S9
+PUB-006,8,BCG,2010-2025,876.0,works,reported,Scholarly works with a firm affiliation recorded in OpenAlex,count,n/a,2010-2025,Bain has no OpenAlex institution record,S9
+ATT-001,8,McKinsey,2016-2025,638508.1,views per year,attention,Average annual English-Wikipedia pageviews of the firm's article,sum of monthly user pageviews,10 years,"user agents, all access",none,S10
+ATT-001,8,BCG,2016-2025,318860.1,views per year,attention,Average annual English-Wikipedia pageviews of the firm's article,sum of monthly user pageviews,10 years,"user agents, all access",none,S10
+ATT-001,8,Bain,2016-2025,252319.6,views per year,attention,Average annual English-Wikipedia pageviews of the firm's article,sum of monthly user pageviews,10 years,"user agents, all access",none,S10
