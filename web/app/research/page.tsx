@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ClaimList, FindingChart, FirmDot, Label, Provenance, Section, SourceLinks } from "@/components/report-parts"
 import { PageShell } from "@/components/page-shell"
+import { Toc } from "@/components/toc"
 import { BASIS_LABEL, FIRMS, metric, metricRows, summary, type Firm } from "@/lib/data"
 import { NONE_FOUND, fmtMetric } from "@/lib/data"
 import { FINDINGS } from "@/lib/findings"
@@ -159,14 +160,7 @@ export default function Report() {
           </Section>
         </article>
 
-        <aside className="hidden xl:block">
-          <nav aria-label="On this page" className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto text-[13px]">
-            <p className="mb-3 font-bold">On this page</p>
-            <ul className="space-y-2 border-l border-border pl-3">
-              {TOC.map(([id, label]) => <li key={id}><a href={`#${id}`} className="text-muted-foreground transition-colors hover:text-foreground">{label}</a></li>)}
-            </ul>
-          </nav>
-        </aside>
+        <aside className="hidden xl:block"><Toc items={TOC as [string, string][]} /></aside>
       </div>
     </PageShell>
   )

@@ -17,7 +17,7 @@ export type Finding = {
   charts: ChartSpec[]; script: string; tables: string[]; core: boolean
 }
 
-export const FINDINGS: Finding[] = [
+const RAW: Finding[] = [
   {
     slug: "hiring-footprint", num: 1, core: true,
     title: "US hiring footprint and filing trends", short: "US hiring footprint",
@@ -208,3 +208,6 @@ export const FINDINGS: Finding[] = [
     script: "src/ingest/site_inventory.py, openalex.py, attention.py", tables: ["bcg_ai_publications_by_year", "openalex_works_by_year", "wikipedia_pageviews_by_year"],
   },
 ]
+
+// Numbered in reading order on this site (the repository's finding-set numbers differ: docs/findings/0N_*.md).
+export const FINDINGS: Finding[] = RAW.map((f, i) => ({ ...f, num: i + 1 }))
