@@ -104,7 +104,11 @@ export function FindingChart({ spec }: { spec: ChartSpec }) {
     return <ScaleChart id={spec.id} points={pts} title={spec.title} units={spec.units} period={spec.period} caption={spec.caption}
       limitation={spec.limitation ?? ""} sourceNote={spec.sourceNote} metricIds={spec.metricIds} />
   }
-  return <Chart id={spec.id} kind={spec.kind} data={table(spec.table!)} xKey={spec.xKey!} firms={spec.firms}
+  let data = table(spec.table!)
+  if (spec.valueKey && spec.valueFirm) data = data.map((r) => ({ [spec.xKey!]: r[spec.xKey!], [spec.valueFirm!]: r[spec.valueKey!] }))
+  const firms = spec.firms ?? FIRMS
+  if (!firms.some((f) => data.some((r) => r[f] != null))) throw new Error(`Chart ${spec.id} has no data: table ${spec.table} has no column for ${firms.join(", ")}`)
+  return <Chart id={spec.id} kind={spec.kind} data={data} xKey={spec.xKey!} firms={spec.firms}
     title={spec.title} units={spec.units} period={spec.period} caption={spec.caption} limitation={spec.limitation}
     sourceNote={spec.sourceNote} metricIds={spec.metricIds} height={spec.height} />
 }

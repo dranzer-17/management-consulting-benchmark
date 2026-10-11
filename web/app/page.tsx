@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { GithubIcon } from "@/components/github-icon"
 import { FindingChart } from "@/components/report-parts"
 import { PageShell } from "@/components/page-shell"
 import { FINDINGS } from "@/lib/findings"
@@ -7,6 +8,8 @@ import { DISCLAIMER, REPORT_PATH, REPO_URL, BASE_PATH } from "@/lib/site"
 
 const FEATURED = ["chart-filings", "chart-technical", "chart-revenue"]
 const allCharts = FINDINGS.flatMap((f) => f.charts)
+
+export const metadata = { title: { absolute: "McKinsey vs BCG vs Bain | Kavish Shah | Research" }, alternates: { canonical: BASE_PATH } }
 
 export default function Home() {
   const [fy0, fy1] = summary.us_filings_fiscal_years
@@ -21,7 +24,10 @@ export default function Home() {
   return (
     <PageShell wide>
       <div className="max-w-[720px]">
-        <h1 className="text-3xl font-bold leading-tight md:text-[46px]">Management Consulting Competitive Benchmarking</h1>
+        <h1>
+          <span className="block text-4xl font-bold leading-tight md:text-[56px]">McKinsey vs BCG vs Bain</span>
+          <span className="mt-3 block text-xl font-medium leading-snug text-muted-foreground md:text-[26px]">Management Consulting Competitive Benchmarking</span>
+        </h1>
         <p className="prose-report mt-5">
           An independent, data-driven examination of the observable differences in scale, talent signals, geographic footprint, and
           public-sector exposure across McKinsey, BCG, and Bain.
@@ -35,7 +41,7 @@ export default function Home() {
           <Link className="link-arrow" href={REPORT_PATH}>Read the research <span aria-hidden>↗</span></Link>
           <Link className="link-arrow" href="/data-and-sources">Explore the data <span aria-hidden>↗</span></Link>
           <Link className="link-arrow" href="/methodology">View methodology <span aria-hidden>↗</span></Link>
-          <a className="link-arrow" href={REPO_URL} target="_blank" rel="noopener noreferrer">Source code <span aria-hidden>↗</span></a>
+          <a className="link-arrow" href={REPO_URL} target="_blank" rel="noopener noreferrer"><GithubIcon />Source code <span aria-hidden>↗</span></a>
         </p>
         <p className="mt-8 rounded-md bg-warn-bg px-4 py-3 text-[14px] text-warn">{DISCLAIMER}</p>
       </div>

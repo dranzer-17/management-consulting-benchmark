@@ -6,6 +6,8 @@ import type { Firm } from "@/lib/data"
 export type ChartSpec = {
   id: string; kind: ChartKind | "scale"; table?: string; xKey?: string; title: string; units: string; period: string
   caption: string; limitation?: string; sourceNote: string; metricIds: string[]; height?: number; firms?: Firm[]
+  /** For single-series tables that store the value in one column (not one column per firm). */
+  valueKey?: string; valueFirm?: Firm
 }
 
 export type Finding = {
@@ -202,7 +204,7 @@ const RAW: Finding[] = [
       "Pageviews measure public attention, not business performance, and OpenAlex affiliation strings are inconsistent.",
     ],
     charts: [
-      { id: "chart-ai", kind: "line", table: "bcg_ai_publications_by_year", xKey: "year", firms: ["BCG"], title: "BCG publication pages naming AI in the URL", units: "% of dated publication pages", period: "2013–2025",
+      { id: "chart-ai", kind: "line", table: "bcg_ai_publications_by_year", xKey: "year", firms: ["BCG"], valueKey: "share_pct", valueFirm: "BCG", title: "BCG publication pages naming AI in the URL", units: "% of dated publication pages", period: "2013–2025",
         caption: "BCG only: no comparable publication series could be built for the other two.", limitation: "Based on URL slugs only.", sourceNote: "BCG public sitemap (S4)", metricIds: ["PUB-003", "PUB-004", "PUB-005"] },
     ],
     script: "src/ingest/site_inventory.py, openalex.py, attention.py", tables: ["bcg_ai_publications_by_year", "openalex_works_by_year", "wikipedia_pageviews_by_year"],

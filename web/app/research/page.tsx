@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ClaimList, FindingChart, FirmDot, Label, Provenance, Section, SourceLinks } from "@/components/report-parts"
 import { PageShell } from "@/components/page-shell"
+import { GithubIcon } from "@/components/github-icon"
 import { Toc } from "@/components/toc"
 import { BASIS_LABEL, FIRMS, metric, metricRows, summary, type Firm } from "@/lib/data"
 import { NONE_FOUND, fmtMetric } from "@/lib/data"
@@ -45,7 +46,7 @@ export default function Report() {
           <header>
             <h1 className="text-3xl font-bold leading-tight md:text-[42px]">McKinsey, BCG and Bain: what public data can and cannot show</h1>
             <p className="mt-4 text-[14px] text-muted-foreground">
-              Kavish Shah · Published {longDate(PUBLISHED)} · Last updated {longDate(UPDATED)} · <a className="underline underline-offset-2" href={REPO_URL} target="_blank" rel="noopener noreferrer">Source code</a>
+              Kavish Shah · Published {longDate(PUBLISHED)} · Last updated {longDate(UPDATED)} · <a className="inline-flex items-center gap-1.5 underline underline-offset-2" href={REPO_URL} target="_blank" rel="noopener noreferrer"><GithubIcon className="h-3.5 w-3.5" />Source code</a>
             </p>
             <p className="mt-6 rounded-md bg-warn-bg px-4 py-3 text-[14px] text-warn">{DISCLAIMER}</p>
           </header>
