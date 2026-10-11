@@ -15,7 +15,7 @@ export default function DataAndSources() {
   const dictionary = metrics.filter((m) => (seen.has(m.metric_id) ? false : (seen.add(m.metric_id), true)))
   return (
     <PageShell wide>
-      <div className="max-w-[720px]">
+      <div className="max-w-[64rem]">
         <PageTitle title="What the study is built on">
           <p>{summary.sources} public sources, {summary.source_records.toLocaleString("en-US")} cleaned records and {summary.metric_definitions} defined metrics. Retrieval dates are in each source entry.</p>
         </PageTitle>
@@ -54,7 +54,7 @@ export default function DataAndSources() {
       <p className="mt-2 text-[12px] text-muted-foreground">{summary.source_records_note}.</p>
 
       <H id="scale-points">Scale data points and verification status</H>
-      <p className="prose-report max-w-[720px] text-[16px]">
+      <p className="prose-report text-[16px]">
         These hand-compiled figures feed the scale finding. “Verified” means the source page was opened and the figure confirmed. Open the URL to check any point yourself.
       </p>
       <div className="mt-4 overflow-x-auto">

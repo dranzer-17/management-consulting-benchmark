@@ -41,7 +41,7 @@ export default function Report() {
   const [fy0, fy1] = summary.us_filings_fiscal_years
   return (
     <PageShell wide>
-      <div className="grid gap-12 xl:grid-cols-[minmax(0,720px)_200px]">
+      <div className="grid gap-12 xl:grid-cols-[minmax(0,1fr)_220px]">
         <article>
           <header>
             <h1 className="text-3xl font-bold leading-tight md:text-[42px]">McKinsey, BCG and Bain: what public data can and cannot show</h1>

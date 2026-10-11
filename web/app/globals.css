@@ -73,7 +73,7 @@
 }
 
 /* Long-form text: DM Sans for readability, a ~68ch measure. */
-.prose-report { font-family: "DM Sans Variable", system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.75; max-width: 68ch; color: color-mix(in srgb, var(--foreground) 82%, transparent); }
+.prose-report { font-family: "DM Sans Variable", system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.75; max-width: 90ch; color: color-mix(in srgb, var(--foreground) 82%, transparent); }
 .prose-report strong { color: var(--foreground); }
 .prose-report p + p { margin-top: 1.1em; }
 

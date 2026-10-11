@@ -23,7 +23,7 @@ export default function Home() {
   ]
   return (
     <PageShell wide>
-      <div className="max-w-[720px]">
+      <div className="max-w-[64rem]">
         <h1>
           <span className="block text-4xl font-bold leading-tight md:text-[56px]">McKinsey vs BCG vs Bain</span>
           <span className="mt-3 block text-xl font-medium leading-snug text-muted-foreground md:text-[26px]">Management Consulting Competitive Benchmarking</span>
@@ -77,7 +77,7 @@ export default function Home() {
         <p><Link href={REPORT_PATH} className="link-arrow">All charts and findings <span aria-hidden>↗</span></Link></p>
       </section>
 
-      <section aria-labelledby="method" className="mt-16 max-w-[720px]">
+      <section aria-labelledby="method" className="mt-16">
         <h2 id="method" className="text-2xl font-bold">Methodology and reproducibility</h2>
         <ul className="prose-report mt-4 list-disc space-y-2 pl-5 text-[16px]">
           <li><strong>Where the data comes from:</strong> government registries (US Labor, USAspending, SEC, UK, Canada, Australia), firm releases and public sitemaps, OpenAlex, Wikipedia and Wikidata.</li>
@@ -92,7 +92,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section aria-labelledby="downloads" className="mt-16 max-w-[720px]">
+      <section aria-labelledby="downloads" className="mt-16">
         <h2 id="downloads" className="text-2xl font-bold">Downloads and source code</h2>
         <ul className="mt-4 space-y-1.5 text-[16px]">
           {summary.downloads.map((f) => (
