@@ -1,0 +1,253 @@
+firm,brand,city_slug,region
+BCG,x,berlin,
+BCG,platinion,cologne,
+BCG,platinion,frankfurt,
+BCG,expand-research,london,
+BCG,x,manhattan-beach,
+BCG,platinion,milan,
+BCG,platinion,munich,
+BCG,platinion,new-york,
+BCG,expand-research,new-york,
+BCG,expand-research,singapore,
+BCG,platinion,berlin,
+BCG,platinion,amsterdam,
+BCG,platinion,brussels,
+BCG,x,tokyo,
+BCG,region-or-global,global-services,
+BCG,brighthouse,atlanta,
+BCG,acc,boston,
+BCG,core,london-canary-wharf,Europe
+BCG,acc,gurugram,
+BCG,core,value-science-center-san-francisco,
+BCG,core,value-science-center-singapore,
+BCG,core,value-science-center-munich,
+BCG,platinion,pittsburgh,
+BCG,core,bengaluru,Asia-Pacific
+BCG,core,manila,Asia-Pacific
+BCG,core,doha,Middle East and Africa
+BCG,core,shenzhen,Asia-Pacific
+BCG,core,nairobi,Middle East and Africa
+BCG,acc,bengaluru,
+BCG,acc,madrid,
+BCG,core,pittsburgh,North America
+BCG,core,austin,North America
+BCG,platinion,hamburg,
+BCG,core,lima,Latin America
+BCG,core,lagos,Middle East and Africa
+BCG,core,kyoto,Asia-Pacific
+BCG,core,osaka,Asia-Pacific
+BCG,core,boston,North America
+BCG,core,atlanta,North America
+BCG,core,calgary,North America
+BCG,acc,chicago,
+BCG,core,dallas,North America
+BCG,core,detroit,North America
+BCG,core,houston,North America
+BCG,core,los-angeles,North America
+BCG,core,mexico-city,Latin America
+BCG,core,miami,North America
+BCG,core,minneapolis,North America
+BCG,core,monterrey,Latin America
+BCG,core,montreal,North America
+BCG,core,new-jersey,North America
+BCG,core,new-york,North America
+BCG,core,philadelphia,North America
+BCG,core,seattle,North America
+BCG,core,toronto,North America
+BCG,core,washington-dc,North America
+BCG,core,bogota,Latin America
+BCG,core,buenos-aires,Latin America
+BCG,core,rio-de-janeiro,Latin America
+BCG,core,santiago,Latin America
+BCG,core,casablanca,Middle East and Africa
+BCG,core,johannesburg,Middle East and Africa
+BCG,core,auckland,Asia-Pacific
+BCG,core,bangkok,Asia-Pacific
+BCG,core,beijing,Asia-Pacific
+BCG,core,canberra,Asia-Pacific
+BCG,core,chennai,Asia-Pacific
+BCG,core,ho-chi-minh-city,Asia-Pacific
+BCG,core,denver,North America
+BCG,core,abu-dhabi,Middle East and Africa
+BCG,core,hong-kong,Asia-Pacific
+BCG,core,jakarta,Asia-Pacific
+BCG,core,dubai,Middle East and Africa
+BCG,core,kuala-lumpur,Asia-Pacific
+BCG,core,riyadh,Middle East and Africa
+BCG,core,tel-aviv,Middle East and Africa
+BCG,core,melbourne,Asia-Pacific
+BCG,core,nagoya,Asia-Pacific
+BCG,core,new-delhi,Asia-Pacific
+BCG,core,amsterdam,Europe
+BCG,core,perth,Asia-Pacific
+BCG,core,athens,Europe
+BCG,core,seoul,Asia-Pacific
+BCG,core,barcelona,Europe
+BCG,core,shanghai,Asia-Pacific
+BCG,core,berlin,Europe
+BCG,core,singapore,Asia-Pacific
+BCG,core,brussels,Europe
+BCG,core,sydney,Asia-Pacific
+BCG,core,budapest,Europe
+BCG,core,cologne,Europe
+BCG,core,copenhagen,Europe
+BCG,core,dusseldorf,Europe
+BCG,core,frankfurt,Europe
+BCG,core,geneva,Europe
+BCG,core,taipei,Asia-Pacific
+BCG,core,hamburg,Europe
+BCG,core,tokyo,Asia-Pacific
+BCG,core,helsinki,Europe
+BCG,core,oslo,Europe
+BCG,core,zurich,Europe
+BCG,core,istanbul,Europe
+BCG,core,warsaw,Europe
+BCG,core,vienna,Europe
+BCG,core,lisbon,Europe
+BCG,core,stuttgart,Europe
+BCG,core,london,Europe
+BCG,core,stockholm,Europe
+BCG,core,rome,Europe
+BCG,core,prague,Europe
+BCG,core,milan,Europe
+BCG,core,paris,Europe
+BCG,core,munich,Europe
+BCG,core,san-diego,North America
+BCG,core,mumbai-bkc,Asia-Pacific
+BCG,core,nexus-costa-rica,
+BCG,core,sao-paulo,Latin America
+BCG,core,fukuoka,Asia-Pacific
+BCG,core,baku,Middle East and Africa
+BCG,core,nashville,North America
+BCG,core,cairo,Middle East and Africa
+BCG,core,raleigh-durham,North America
+BCG,core,brooklyn,North America
+BCG,platinion,athens,
+BCG,platinion,atlanta,
+BCG,platinion,bangkok,
+BCG,platinion,bengaluru,
+BCG,platinion,bogota,
+BCG,platinion,boston,
+BCG,platinion,canberra,
+BCG,platinion,casablanca,
+BCG,platinion,copenhagen,
+BCG,platinion,dallas,
+BCG,platinion,dubai,
+BCG,platinion,helsinki,
+BCG,platinion,ho-chi-minh-city,
+BCG,platinion,hong-kong,
+BCG,platinion,johannesburg,
+BCG,platinion,london,
+BCG,platinion,los-angeles,
+BCG,platinion,madrid,
+BCG,platinion,melbourne,
+BCG,platinion,new-delhi,
+BCG,platinion,oslo,
+BCG,platinion,paris,
+BCG,platinion,santiago-de-chile,
+BCG,platinion,sao-paulo,
+BCG,platinion,seattle,
+BCG,platinion,singapore,
+BCG,platinion,stockholm,
+BCG,platinion,stuttgart,
+BCG,platinion,sydney,
+BCG,platinion,tokyo,
+BCG,platinion,toronto,
+BCG,platinion,warsaw,
+BCG,platinion,washington-dc,
+BCG,platinion,zurich,
+BCG,platinion,istanbul,
+BCG,core,nexus-atlanta,
+BCG,platinion,riyadh,
+BCG,core,tashkent,Asia-Pacific
+BCG,core,almaty,Asia-Pacific
+BCG,platinion,dusseldorf,
+BCG,inverto,kuala-lumpur,
+BCG,inverto,jakarta,
+BCG,x,singapore,
+BCG,core,hanoi-city,Asia-Pacific
+BCG,core,lisbon-capability-center,
+BCG,bcg,brighthouse-berlin,
+BCG,core,quantis-berlin,
+BCG,expand-research,toronto,
+BCG,expand-research,frankfurt,
+BCG,expand-research,delhi,
+BCG,core,brisbane,Asia-Pacific
+BCG,core,hyderabad,Asia-Pacific
+BCG,core,kuwait-city,Middle East and Africa
+BCG,platinion,doha,
+BCG,inverto,stockholm,
+BCG,inverto,copenhagen,
+BCG,bcg,expand-research-navi-mumbai,
+BCG,core,budapest-integrom,Europe
+Bain,core,abu-dhabi,Middle East and Africa
+Bain,core,montreal,North America
+Bain,core,brisbane,Asia-Pacific
+Bain,core,ho-chi-minh-city,Asia-Pacific
+Bain,core,denver,North America
+Bain,core,monterrey,Latin America
+Bain,core,manila,Asia-Pacific
+Bain,core,minneapolis-frwd,North America
+Bain,core,vienna,Europe
+Bain,core,lisbon,Europe
+Bain,core,athens,Europe
+Bain,core,austin,North America
+Bain,core,berlin,Europe
+Bain,core,bogota,Latin America
+Bain,core,mumbai,Asia-Pacific
+Bain,core,munich,Europe
+Bain,core,new-delhi,Asia-Pacific
+Bain,core,new-york,North America
+Bain,core,nordic,Europe
+Bain,core,oslo,Europe
+Bain,core,silicon-valley,North America
+Bain,core,paris,Europe
+Bain,core,perth,Asia-Pacific
+Bain,core,rio-de-janeiro,Latin America
+Bain,core,riyadh,Middle East and Africa
+Bain,core,rome,Europe
+Bain,core,san-francisco,North America
+Bain,core,santiago,Latin America
+Bain,core,sao-paulo,Latin America
+Bain,core,seattle,North America
+Bain,core,seoul,Asia-Pacific
+Bain,core,shanghai,Asia-Pacific
+Bain,core,singapore,Asia-Pacific
+Bain,core,stockholm,Europe
+Bain,core,sydney,Asia-Pacific
+Bain,core,tokyo,Asia-Pacific
+Bain,core,toronto,North America
+Bain,core,warsaw,Europe
+Bain,core,washington-dc,North America
+Bain,core,zurich,Europe
+Bain,region-or-global,india,
+Bain,core,atlanta,North America
+Bain,core,amsterdam,Europe
+Bain,core,bangkok,Asia-Pacific
+Bain,core,beijing,Asia-Pacific
+Bain,core,bengaluru,Asia-Pacific
+Bain,core,boston,North America
+Bain,core,brussels,Europe
+Bain,core,buenos-aires,Latin America
+Bain,core,chicago,North America
+Bain,core,copenhagen,Europe
+Bain,core,dallas,North America
+Bain,core,doha,Middle East and Africa
+Bain,core,dubai,Middle East and Africa
+Bain,core,dusseldorf,Europe
+Bain,core,frankfurt,Europe
+Bain,core,helsinki,Europe
+Bain,core,hong-kong,Asia-Pacific
+Bain,core,houston,North America
+Bain,core,istanbul,Europe
+Bain,core,jakarta,Asia-Pacific
+Bain,core,johannesburg,Middle East and Africa
+Bain,core,kuala-lumpur,Asia-Pacific
+Bain,core,kyiv,Europe
+Bain,core,london,Europe
+Bain,core,los-angeles,North America
+Bain,core,madrid,Europe
+Bain,core,melbourne,Asia-Pacific
+Bain,core,mexico-city,Latin America
+Bain,core,milan,Europe
+Bain,region-or-global,middle-east,

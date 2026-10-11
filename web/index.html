@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>McKinsey, BCG and Bain: a public-data benchmark</title>
+<meta name="description" content="An independent comparison of McKinsey, BCG and Bain built only from public data, with what was measured, what was not, and how to check it.">
+<style>
+:root{--bg:#fbfaf7;--fg:#1c1f26;--muted:#5d6472;--line:#e3e0d8;--card:#fff;--mck:#1f3a5f;--bcg:#2e8b57;--bain:#c0392b;--warn:#8a5a00;--warnbg:#fff4dc}
+@media (prefers-color-scheme:dark){:root{--bg:#14161a;--fg:#e8e6e1;--muted:#a1a7b3;--line:#2c3038;--card:#1c1f25;--mck:#6f9bd6;--bcg:#52c08a;--bain:#ef7f72;--warn:#f0c36b;--warnbg:#2b2413}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+header{padding:48px 0 24px;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.2;margin:0 0 12px}
+h2{font-size:1.5rem;margin:48px 0 8px}
+h3{font-size:1.1rem;margin:28px 0 4px}
+p,li{max-width:70ch}
+.lede{font-size:1.1rem;color:var(--muted)}
+.notice{background:var(--warnbg);color:var(--warn);border-radius:8px;padding:10px 14px;font-size:.92rem;margin:16px 0}
+nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:16px;overflow-x:auto;padding:10px 16px;white-space:nowrap;font-size:.9rem}
+nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--fg)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin:20px 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.kpi h4{margin:0 0 8px;font-size:.85rem;font-weight:600;color:var(--muted)}
+.kpi div{display:flex;justify-content:space-between;font-variant-numeric:tabular-nums;font-size:.95rem}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;margin:14px 0}
+.card h3{margin-top:0}
+.card .cap{color:var(--muted);font-size:.88rem;margin:6px 0 0}
+.chart{position:relative;height:300px}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600}
+.scroll{overflow-x:auto}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.pill{font-size:.75rem;border:1px solid var(--line);border-radius:99px;padding:1px 8px;color:var(--muted)}
+details{border-bottom:1px solid var(--line);padding:8px 0}summary{cursor:pointer;font-weight:600}
+code{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:1px 5px;font-size:.88em}
+pre{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px;overflow-x:auto}
+footer{margin:64px 0 40px;color:var(--muted);font-size:.88rem}
+a{color:var(--mck)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<h1>McKinsey, BCG and Bain: what public data can and cannot tell us</h1>
+<p class="lede">An independent comparison of the three firms built only from public sources: government filings, contract registries, the firms' own press releases and websites. Every number on this page is generated from the files in the repository.</p>
+<div class="notice">Independent research. Not affiliated with, endorsed by, or based on confidential information from McKinsey &amp; Company, Boston Consulting Group or Bain &amp; Company. Findings are descriptive; no significance tests were run.</div>
+</div></header>
+<nav><div class="wrap"><a href="#headline">Headline</a><a href="#hiring">Hiring</a><a href="#capability">Capability</a><a href="#public">Public sector</a><a href="#scale">Scale</a><a href="#industry">Industry</a><a href="#attention">Content &amp; attention</a><a href="#scope">Did and didn't do</a><a href="#claims">Claims</a><a href="#sources">Sources</a><a href="#reproduce">Reproduce</a></div></nav>
+<main class="wrap">
+
+<section id="headline"><h2>Headline numbers</h2>
+<p>The question: how have the three firms positioned themselves over the past decade, and what differentiates their growth, geography, industry exposure and capabilities? Public data answers this well for US hiring, partly for scale, and not at all for industry mix.</p>
+<div class="kpis" id="kpis"></div>
+</section>
+
+<section id="hiring"><h2>1. Scale and hiring footprint</h2>
+<p>Source: US Department of Labor H-1B labor condition applications (S1). Filings are a proxy for US hiring, not headcount or revenue. McKinsey files many positions per application, so position counts are not comparable across firms.</p>
+<div class="cols"><div class="card"><h3>Certified filings per fiscal year</h3><div class="chart"><canvas id="c_lca"></canvas></div><p class="cap">Fiscal years with partial data are shown as published.</p></div>
+<div class="card"><h3>Median offered base wage (USD)</h3><div class="chart"><canvas id="c_wage"></canvas></div></div></div>
+<div class="card"><h3>Largest US employee count each firm reported on PERM filings</h3><div class="chart"><canvas id="c_perm"></canvas></div><p class="cap">From green-card labor certifications (S1). The maximum reported in a year is a rough size indicator, not an audited headcount.</p></div>
+</section>
+
+<section id="capability"><h2>2. Capability emphasis</h2>
+<p>The share of certified filings in technical occupations (SOC major group 15) is the clearest strategic signal in the data: all three firms moved the same way, at different speeds and from different starting points.</p>
+<div class="card"><h3>Technical share of certified filings (%)</h3><div class="chart"><canvas id="c_tech"></canvas></div></div>
+</section>
+
+<section id="public"><h2>3. Public-sector exposure</h2>
+<p>Direct prime contracts in the US federal registry (S2), plus UK Contracts Finder awards (S6). Canada (S7) and Australia (S8) registries are filtered the same way. “None found” for Bain is not proof of no work, only of no match above each registry's reporting threshold.</p>
+<div class="cols"><div class="card"><h3>US federal contract value by fiscal year (USD m)</h3><div class="chart"><canvas id="c_fed"></canvas></div></div>
+<div class="card"><h3>UK public-sector award value by year (GBP m)</h3><div class="chart"><canvas id="c_uk"></canvas></div><p class="cap">Excludes framework-agreement ceilings.</p></div>
+<div class="card"><h3>Canadian federal contract value by year (CAD m)</h3><div class="chart"><canvas id="c_ca"></canvas></div><p class="cap">Contracts over CAD 10,000. Bain: none found.</p></div>
+<div class="card"><h3>Australian federal contract value by year (AUD m)</h3><div class="chart"><canvas id="c_au"></canvas></div><p class="cap">AusTender notices. Bain: none found. One large BCG notice drives 2024.</p></div></div>
+</section>
+
+<section id="scale"><h2>4. Firm scale and reach</h2>
+<p>Only BCG publishes revenue and headcount. McKinsey and Bain points come from secondary sources and are marked as estimates. The chart keeps reported and estimated points visually distinct and draws no lines between them, because interpolating across gaps would invent data.</p>
+<div class="card"><h3>Global revenue data points (USD billion)</h3><div class="chart"><canvas id="c_rev"></canvas></div><p class="cap">Filled markers: reported by the firm. Hollow markers: estimates from secondary sources.</p></div>
+<div class="card"><h3>Verification status of scale data points</h3><div class="scroll"><table id="t_verified"></table></div><p class="cap">"Verified" means the source page was opened and the figure confirmed. Unverified points should be read as leads, not facts.</p></div>
+</section>
+
+<section id="industry"><h2>5. Industry exposure</h2>
+<div class="notice">No firm publishes revenue by industry, so industry exposure is not measured. The chart below shows something different: the industries of the companies whose SEC filings <em>mention</em> each firm.</div>
+<div class="card"><h3>Industry mix of operating-company SEC filings that name the firm (%)</h3><div class="chart" style="height:380px"><canvas id="c_sec"></canvas></div><p class="cap">Mentions reflect who writes about the firm (clients, auditors, litigants), not where the firm earns revenue.</p></div>
+</section>
+
+<section id="attention"><h2>6. Published content and public attention</h2>
+<div class="cols"><div class="card"><h3>BCG publications naming AI in the URL (%)</h3><div class="chart"><canvas id="c_ai"></canvas></div><p class="cap">Sitemap URL slugs only; McKinsey's site does not respond to automated requests, and OpenAlex has no Bain record.</p></div>
+<div class="card"><h3>Wikipedia pageviews per year</h3><div class="chart"><canvas id="c_wiki"></canvas></div><p class="cap">Attention, not business performance.</p></div></div>
+</section>
+
+<section id="scope"><h2>What this study did and did not do</h2>
+<div class="cols">
+<div><h3>Did</h3><ul>
+<li>Pulled public records from 11 sources: US Labor, USAspending, SEC EDGAR, the UK, Canadian and Australian contract registries, OpenAlex, Wikipedia, Wikidata and firm sitemaps.</li>
+<li>Kept raw extracts untouched; every transformation is a script (<code>src/clean.py</code>).</li>
+<li>Defined every metric with numerator, denominator, filters and missing-data rule (<code>outputs/tables/metrics.csv</code>).</li>
+<li>Registered every written claim with its source and limitation, and tested it against the data on every run (<code>claims.csv</code>, <code>pytest</code>).</li>
+<li>Used one strict name matcher so "Bain &amp; Schindele" or "McKinsey Fencing" cannot leak in.</li>
+</ul></div>
+<div><h3>Did not</h3><ul>
+<li>Compare revenue across the decade: only BCG reports it.</li>
+<li>Measure industry exposure, client lists or strategy: none of it is public in a comparable form.</li>
+<li>Run significance tests or causal analysis; all findings are descriptive.</li>
+<li>Use confidential, paywalled or scraped-behind-login data. Only sitemaps named in robots.txt were read; no pages were crawled.</li>
+<li>Verify most McKinsey and Bain scale figures against their original pages (see the verification table).</li>
+<li>Build the Power BI dashboard or slide deck from the original brief; this site and the written findings replace them.</li>
+</ul></div></div>
+</section>
+
+<section id="claims"><h2>Claims register</h2>
+<p>Each claim below is checked by an automated test against the computed metrics. If the data changes and a claim stops being true, the test fails.</p>
+<div class="scroll"><table id="t_claims"></table></div>
+</section>
+
+<section id="sources"><h2>Sources</h2>
+<div class="scroll"><table id="t_sources"></table></div>
+</section>
+
+<section id="reproduce"><h2>Reproduce it</h2>
+<pre>python -m venv .venv &amp;&amp; .venv/bin/pip install -r requirements.txt
+make reproduce   # clean, metrics, figures, validate, export this site from the raw extracts (no network)
+make test        # validation plus every registered claim
+make ingest      # re-download the raw data (slow; hits public APIs)</pre>
+</section>
+
+<footer>Generated from <code>web/data.js</code>. Retrieval date for all sources: October 2026.</footer>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="data.js"></script>
+<script>
+const D = window.DATA, T = D.tables;
+const FIRMS = ["McKinsey", "BCG", "Bain"];
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const COL = {McKinsey: css("--mck"), BCG: css("--bcg"), Bain: css("--bain")};
+Chart.defaults.color = css("--muted");
+Chart.defaults.borderColor = css("--line");
+Chart.defaults.font.family = "system-ui, sans-serif";
+
+const num = v => (v === "" || v == null || isNaN(+v)) ? null : +v;
+const fmt = (v, d = 0) => v == null ? "n/a" : Number(v).toLocaleString("en-US", {maximumFractionDigits: d});
+const metric = (id, firm, period) => D.metrics.find(m => m.metric_id === id && m.firm === firm && (!period || m.period === period));
+const el = id => document.getElementById(id);
+
+// KPI cards
+const KPIS = [
+  ["US H-1B filings, FY2015-25 (certified)", "HIRE-001", v => fmt(v)],
+  ["Filing growth, FY2016-24 (% a year)", "HIRE-002", v => fmt(v, 1) + "%"],
+  ["US worksite states", "HIRE-003", v => fmt(v)],
+  ["Technical share of filings, late period", "CAP-003", v => fmt(v, 1) + "%"],
+  ["Federal prime contract value (USD m)", "FED-002", v => fmt(v)],
+  ["Median offered base wage (USD)", "HIRE-007", v => fmt(v)],
+];
+el("kpis").innerHTML = KPIS.map(([label, id, f]) => `<div class="kpi"><h4>${label}</h4>${FIRMS.map(firm => {
+  const m = metric(id, firm);
+  return `<div><span><span class="dot" style="background:${COL[firm]}"></span>${firm}</span><strong>${m ? f(num(m.value)) : "n/a"}</strong></div>`;
+}).join("")}</div>`).join("");
+
+// generic charts over wide tables (x column + one column per firm)
+function series(table, xKey, firms = FIRMS) {
+  const rows = T[table];
+  return {labels: rows.map(r => r[xKey]), datasets: firms.filter(f => rows[0] && f in rows[0]).map(f => ({
+    label: f, data: rows.map(r => num(r[f])), borderColor: COL[f], backgroundColor: COL[f], tension: .15, pointRadius: 2, spanGaps: false}))};
+}
+const opts = (extra = {}) => ({responsive: true, maintainAspectRatio: false, interaction: {mode: "index", intersect: false}, plugins: {legend: {position: "bottom"}}, ...extra});
+const line = (id, table, xKey) => new Chart(el(id), {type: "line", data: series(table, xKey), options: opts()});
+const bars = (id, table, xKey, extra = {}) => { const s = series(table, xKey); s.datasets.forEach(d => d.borderWidth = 0);
+  return new Chart(el(id), {type: "bar", data: s, options: opts(extra)}); };
+
+line("c_lca", "lca_filings_by_year", "fiscal_year");
+line("c_wage", "lca_median_wage_by_year", "fiscal_year");
+line("c_perm", "perm_us_employees_max_by_year", "fiscal_year");
+line("c_tech", "technical_share_by_year", "fiscal_year");
+bars("c_fed", "federal_value_usd_m_by_year", "fiscal_year");
+bars("c_uk", "uk_value_gbp_m_by_year", "year");
+bars("c_ca", "canada_value_cad_m_by_year", "year");
+bars("c_au", "austender_value_aud_m_by_year", "year");
+line("c_wiki", "wikipedia_pageviews_by_year", "year");
+bars("c_sec", "sec_industry_mix_pct", "industry", {indexAxis: "y"});
+
+new Chart(el("c_ai"), {type: "line", options: opts({plugins: {legend: {display: false}}}), data: {
+  labels: T.bcg_ai_publications_by_year.map(r => r.year),
+  datasets: [{label: "BCG", data: T.bcg_ai_publications_by_year.map(r => num(r.share_pct)), borderColor: COL.BCG, backgroundColor: COL.BCG, tension: .15}]}});
+
+// revenue points: reported = filled, estimated = hollow, no connecting lines
+const pts = T.scale_points_all.filter(r => r.metric === "revenue");
+new Chart(el("c_rev"), {type: "scatter", options: opts({scales: {x: {type: "linear", ticks: {callback: v => String(v)}, min: 2015, max: 2026}}, interaction: {mode: "nearest"}}),
+  data: {datasets: FIRMS.flatMap(f => ["reported", "estimated"].map(t => ({
+    label: `${f} (${t})`, data: pts.filter(r => r.firm === f && r.type === t).map(r => ({x: +r.year, y: +r.value})),
+    borderColor: COL[f], backgroundColor: t === "reported" ? COL[f] : "transparent", pointRadius: 5, pointBorderWidth: 2, showLine: false})).filter(d => d.data.length))}});
+
+// tables
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+const table = (id, head, rows) => el(id).innerHTML = `<thead><tr>${head.map(h => `<th>${h}</th>`).join("")}</tr></thead><tbody>${rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join("")}</tr>`).join("")}</tbody>`;
+table("t_verified", ["Firm", "Verified", "Not verified"], T.scale_points_verified.map(r => [r.firm, r.yes, r.no]));
+table("t_claims", ["ID", "Claim", "Limitation", "Status"], D.claims.map(c => [c.claim_id, esc(c.claim), esc(c.limitation), `<span class="pill">${esc(c.status)}</span>`]));
+table("t_sources", ["ID", "Source", "Dataset", "Range", "Limitations"], D.sources.map(s =>
+  [s.source_id, esc(s.publisher), `<a href="${esc(s.url)}" rel="noopener">${esc(s.dataset)}</a>`, esc(s.date_range), esc(s.limitations)]));
+</script>
+</body>
+</html>

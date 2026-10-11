@@ -1,0 +1,11 @@
+firm,qid,metric,value,unit,point_in_time,reference_url,rank
+McKinsey,Q310207,revenue,+10600000000,Q4917,+2020-00-00T00:00:00Z,https://www.forbes.com/companies/mckinsey-company/?list=largest-private-companies&sh=36a1a72324c1,normal
+McKinsey,Q310207,revenue,+16000000000,Q4917,+2023-00-00T00:00:00Z,https://www.ft.com/content/d17b114c-fdbe-433f-902e-5043ec51cb5a,preferred
+McKinsey,Q310207,headcount,+45100,1,+2023-00-00T00:00:00Z,http://www.forbes.com/companies/mckinsey-company/,normal
+BCG,Q135635,headcount,+18500,1,,,normal
+Bain,Q764850,revenue,+5800000000,Q4917,+2021-00-00T00:00:00Z,https://www.expansion.com/empresas/2022/02/14/620a7813e5fdeae6388b4605.html,normal
+Bain,Q764850,headcount,+5700,1,,,normal
+Bain,Q764850,headcount,+7000,1,+2017-05-00T00:00:00Z,,normal
+Bain,Q764850,headcount,+9000,1,,,preferred
+Bain,Q764850,headcount,+13000,1,+2020-00-00T00:00:00Z,,normal
+Bain,Q764850,headcount,+19000,1,+2026-00-00T00:00:00Z,https://www.bain.com/about/,normal

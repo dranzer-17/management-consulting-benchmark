@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/raw/austender_rows.jsonl
+data/raw/austender_done.txt
+*.duckdb
+data/benchmark.db
+.pytest_cache/
+.qodo/
+managed_context/
+test_suite_analysis/
+.env

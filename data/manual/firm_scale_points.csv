@@ -1,0 +1,36 @@
+firm,year,metric,value,unit,type,confidence,source_url,note,verified
+BCG,2017,headcount,16000.0,employees,reported,high,https://www.prnewswire.com/news-releases/boston-consulting-group-revenues-reach-7-5-billion-300819689.html,Prior-year figure quoted in the 2018 results release,yes
+BCG,2018,revenue,7.5,usd_billion,reported,high,https://www.prnewswire.com/news-releases/boston-consulting-group-revenues-reach-7-5-billion-300819689.html,Release dated 2019-03-28; global sales,yes
+BCG,2018,headcount,18500.0,employees,reported,high,https://www.prnewswire.com/news-releases/boston-consulting-group-revenues-reach-7-5-billion-300819689.html,,yes
+BCG,2019,revenue,8.5,usd_billion,reported,high,https://www.prnewswire.com/news-releases/boston-consulting-group-revenues-reach-8-5-billion-301021979.html,Release dated 2020-03-12,yes
+BCG,2019,headcount,21000.0,employees,reported,high,https://www.prnewswire.com/news-releases/boston-consulting-group-revenues-reach-8-5-billion-301021979.html,,yes
+BCG,2020,revenue,8.6,usd_billion,reported,high,https://www.prnewswire.com/news-releases/boston-consulting-group-posts-solid-growth-in-challenged-global-economy-301254395.html,Release dated 2021-03-24,yes
+BCG,2020,headcount,22000.0,employees,reported,high,https://www.prnewswire.com/news-releases/boston-consulting-group-posts-solid-growth-in-challenged-global-economy-301254395.html,Release dated 2021-03-24,yes
+BCG,2022,headcount,30000.0,employees,reported,high,https://www.prnewswire.com/news-releases/bcg-delivers-20th-consecutive-year-of-growth-302116086.html,Prior-year figure quoted in the 2023 results release,yes
+BCG,2023,revenue,12.3,usd_billion,reported,high,https://www.prnewswire.com/news-releases/bcg-delivers-20th-consecutive-year-of-growth-302116086.html,,yes
+BCG,2023,headcount,32000.0,employees,reported,high,https://www.prnewswire.com/news-releases/bcg-delivers-20th-consecutive-year-of-growth-302116086.html,,yes
+BCG,2024,revenue,13.5,usd_billion,reported,high,https://www.prnewswire.com/news-releases/bcg-ceo-christoph-schweizer-reelected-to-a-second-term-as-firm-achieves-10-growth-in-2024-and-record-revenue-302418643.html,,yes
+BCG,2024,headcount,33000.0,employees,reported,high,https://www.prnewswire.com/news-releases/bcg-ceo-christoph-schweizer-reelected-to-a-second-term-as-firm-achieves-10-growth-in-2024-and-record-revenue-302418643.html,,yes
+BCG,2025,revenue,14.4,usd_billion,reported,high,https://www.bcg.com/press/23april2026-bcg-revenue-22nd-consecutive-year-growth,,yes
+BCG,2025,headcount,33500.0,employees,reported,high,https://www.bcg.com/press/23april2026-bcg-revenue-22nd-consecutive-year-growth,,yes
+McKinsey,2018,headcount,28000.0,employees,estimated,medium,https://fortune.com/2024/02/08/mckinsey-puts-3000-staffers-on-review/,Fortune reporting; not a McKinsey publication,no
+McKinsey,2022,revenue,12.0,usd_billion,estimated,low,https://www.influencewatch.org/for-profit/mckinsey-and-company/,"Forbes estimate (""over 12 billion"") as cited by InfluenceWatch; floor value",no
+McKinsey,2023,revenue,16.0,usd_billion,estimated,medium,https://www.reveliolabs.com/companies/mckinsey/employees,Reported as the firm's own figure in secondary analysis (2023 ESG report); not independently confirmed,no
+McKinsey,2023,headcount,45000.0,employees,estimated,medium,https://fortune.com/2024/02/08/mckinsey-puts-3000-staffers-on-review/,Approximate; third-party sources range from 38000 to 49000,no
+Bain,2018,revenue,3.0,usd_billion,estimated,low,https://umbrex.com/resources/profiles-of-the-top-consulting-firms/overview-profile-and-history-of-bain/,"Press analysis: ""just over $3 billion""; floor value",no
+Bain,2020,headcount,12000.0,employees,reported,medium,https://www.sec.gov/Archives/edgar/data/1547361/000153949720001392/n2346_x5-424h.htm,"SEC filing text: ""more than 12,000""; floor value",no
+Bain,2023,revenue,6.0,usd_billion,estimated,low,https://umbrex.com/resources/profiles-of-the-top-consulting-firms/overview-profile-and-history-of-bain/,"Press analysis (""about $6 billion""); another aggregator gives about 7",no
+Bain,2023,headcount,19000.0,employees,estimated,low,https://umbrex.com/resources/profiles-of-the-top-consulting-firms/overview-profile-and-history-of-bain/,Aggregators range from 19000 to 21970,no
+BCG,2025,offices_cities,100.0,cities,reported,high,https://www.bcg.com/about/overview,"""100+ cities""; floor value",yes
+BCG,2025,countries,50.0,countries,reported,high,https://www.bcg.com/about/overview,"""more than 50""; floor value",yes
+McKinsey,2023,countries,68.0,countries,estimated,medium,https://www.reveliolabs.com/companies/mckinsey/employees,From 2023 ESG report as summarized by a secondary source,no
+McKinsey,2025,offices_cities,130.0,cities,estimated,medium,https://www.influencewatch.org/for-profit/mckinsey-and-company/,"""over 130 cities""; floor value",no
+Bain,2020,offices_cities,59.0,cities,reported,medium,https://www.sec.gov/Archives/edgar/data/1547361/000153949720001392/n2346_x5-424h.htm,SEC filing text,no
+Bain,2020,countries,37.0,countries,reported,medium,https://www.sec.gov/Archives/edgar/data/1547361/000153949720001392/n2346_x5-424h.htm,SEC filing text,no
+Bain,2025,offices_cities,67.0,cities,reported,high,https://www.bain.com/about/,'Across 67 cities in 40 countries' (page undated; retrieved Oct 2026),yes
+Bain,2025,countries,40.0,countries,reported,high,https://www.bain.com/about/,'Across 67 cities in 40 countries' (page undated; retrieved Oct 2026),yes
+McKinsey,2020,revenue,10.6,usd_billion,estimated,low,https://www.forbes.com/companies/mckinsey-company/?list=largest-private-companies,"Forbes estimate, found via Wikidata statement; not opened",no
+Bain,2021,revenue,5.8,usd_billion,estimated,low,https://www.expansion.com/empresas/2022/02/14/620a7813e5fdeae6388b4605.html,"Press figure (Expansion), found via Wikidata statement; not opened",no
+Bain,2017,headcount,7000.0,employees,estimated,low,https://www.wikidata.org/wiki/Q764850,Wikidata statement (2017-05) with no reference,no
+BCG,2018,offices_cities,90.0,cities,reported,high,https://www.prnewswire.com/news-releases/boston-consulting-group-revenues-reach-7-5-billion-300819689.html,'More than 90 cities'; floor value,yes
+BCG,2018,countries,50.0,countries,reported,high,https://www.prnewswire.com/news-releases/boston-consulting-group-revenues-reach-7-5-billion-300819689.html,'Over 50 countries'; floor value,yes

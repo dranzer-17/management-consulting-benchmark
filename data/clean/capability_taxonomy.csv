@@ -1,0 +1,41 @@
+firm,original_label,page_count,common_group,kind
+BCG,artificial-intelligence,23,"Technology, data and AI",capability
+BCG,business-organizational-purpose,3,Organization and people,capability
+BCG,business-resilience,3,Operations and performance,capability
+BCG,business-transformation,9,M&A and transformation,capability
+BCG,climate-change-sustainability,21,Sustainability,capability
+BCG,collections,1,Risk and compliance,capability
+BCG,corporate-finance-strategy,19,Strategy and corporate finance,capability
+BCG,cost-management,10,Operations and performance,capability
+BCG,customer-insights,8,"Marketing, sales and customer",capability
+BCG,digital-technology-data,43,"Technology, data and AI",capability
+BCG,diversity-inclusion,5,Organization and people,capability
+BCG,inclusive-advantage,10,Organization and people,capability
+BCG,innovation-strategy-delivery,7,Strategy and corporate finance,capability
+BCG,international-business,9,Strategy and corporate finance,capability
+BCG,manufacturing,4,Operations and performance,capability
+BCG,marketing-sales,20,"Marketing, sales and customer",capability
+BCG,mergers-acquisitions-transactions-pmi,13,M&A and transformation,capability
+BCG,operations,17,Operations and performance,capability
+BCG,organization,5,Organization and people,capability
+BCG,organization-strategy,8,Organization and people,capability
+BCG,people-organization,1,Organization and people,capability
+BCG,people-strategy,14,Organization and people,capability
+BCG,postmerger-integration,1,M&A and transformation,capability
+BCG,pricing-revenue-management,9,"Marketing, sales and customer",capability
+BCG,risk-management-and-compliance,9,Risk and compliance,capability
+BCG,social-impact,19,Sustainability,capability
+BCG,zero-based-budgeting,1,Operations and performance,capability
+Bain,agile,2,Organization and people,capability
+Bain,change-management-results-delivery,6,Organization and people,capability
+Bain,customer-strategy-and-marketing,62,"Marketing, sales and customer",capability
+Bain,data-and-software-solutions,3,"Technology, data and AI",capability
+Bain,digital-transformation,1,"Technology, data and AI",capability
+Bain,diversity-consulting-equity-inclusion,3,Organization and people,capability
+Bain,mergers-acquisitions,8,M&A and transformation,capability
+Bain,operations,9,Operations and performance,capability
+Bain,organization,20,Organization and people,capability
+Bain,performance-improvement,18,Operations and performance,capability
+Bain,strategy,16,Strategy and corporate finance,capability
+Bain,sustainability-corporate-responsibility,12,Sustainability,capability
+Bain,transformation,3,M&A and transformation,capability

@@ -1,0 +1,44 @@
+firm,original_label,page_count,common_group,kind
+BCG,aerospace-and-defense-industry,5,Public sector,industry
+BCG,automotive,4,Industrials and transport,industry
+BCG,consumer-products-industry,6,Consumer and retail,industry
+BCG,education,9,Public sector,industry
+BCG,energy,14,Energy and resources,industry
+BCG,financial-institutions,12,Financial services,industry
+BCG,health-care,22,Healthcare and pharma,industry
+BCG,industrial-goods,10,Industrials and transport,industry
+BCG,insurance,15,Financial services,industry
+BCG,principal-investors-private-equity,14,Private equity and capital,industry
+BCG,public-sector,14,Public sector,industry
+BCG,retail,9,Consumer and retail,industry
+BCG,technology-media-telecommunications,13,"Technology, media and telecom",industry
+BCG,transportation-logistics,12,Industrials and transport,industry
+BCG,travel-tourism,6,Consumer and retail,industry
+BCG,urban-planning,5,Public sector,industry
+Bain,advanced-manufacturing-services,2,Industrials and transport,industry
+Bain,aerospace-defense-government-services,1,Public sector,industry
+Bain,agribusiness,1,Consumer and retail,industry
+Bain,automotive,1,Industrials and transport,industry
+Bain,aviation,5,Industrials and transport,industry
+Bain,building-products-technologies,1,Industrials and transport,industry
+Bain,chemicals,1,Energy and resources,industry
+Bain,construction-infrastructure,1,Industrials and transport,industry
+Bain,consumer-products,8,Consumer and retail,industry
+Bain,energy-and-natural-resources,4,Energy and resources,industry
+Bain,financial-services,14,Financial services,industry
+Bain,healthcare,10,Healthcare and pharma,industry
+Bain,industrial-machinery-equipment,1,Industrials and transport,industry
+Bain,media-and-entertainment,3,"Technology, media and telecom",industry
+Bain,metals,1,Energy and resources,industry
+Bain,mining,1,Energy and resources,industry
+Bain,oil-gas,1,Energy and resources,industry
+Bain,paper-packaging,1,Industrials and transport,industry
+Bain,private-equity,14,Private equity and capital,industry
+Bain,real-estate,1,Industrials and transport,industry
+Bain,retail,17,Consumer and retail,industry
+Bain,social-impact-consulting,3,Public sector,industry
+Bain,technology,13,"Technology, media and telecom",industry
+Bain,telecommunications,10,"Technology, media and telecom",industry
+Bain,transportation,3,Industrials and transport,industry
+Bain,travel-leisure,1,Consumer and retail,industry
+Bain,utilities-renewables,2,Energy and resources,industry

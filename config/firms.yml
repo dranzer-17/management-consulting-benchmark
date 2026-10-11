@@ -1,0 +1,21 @@
+# Firms covered by the study, with display settings and the name patterns used to identify them in each source.
+# Ingest scripts apply source-specific patterns (documented in each script); validate.py checks that cleaned data
+# contains only these three firm labels.
+firms:
+  McKinsey:
+    legal_name: McKinsey & Company, Inc.
+    color: "#1f3a5f"
+    name_patterns: ["mckinsey"]
+  BCG:
+    legal_name: The Boston Consulting Group, Inc.
+    color: "#2e8b57"
+    name_patterns: ["boston consulting group"]
+  Bain:
+    legal_name: Bain & Company, Inc.
+    color: "#c0392b"
+    name_patterns: ["^bain (&|and) co"]
+
+study:
+  decade_window_fiscal_years: [2015, 2025]    # years used for decade comparisons
+  partial_years: [2026]                       # partial years, excluded from growth rates
+  framework_value_ceiling_gbp: 50000000       # UK awards at or above this are framework ceilings, not spend
