@@ -3,7 +3,7 @@ import { summary } from "./data"
 export const SITE_URL = "https://research.kavish.tech"
 export const REPO_URL = summary.repo
 export const PORTFOLIO_URL = "https://kavish.tech"
-export const REPORT_PATH = "/benchmarks/mckinsey-vs-bcg-vs-bain"
+export const REPORT_PATH = "/research"
 export const PUBLISHED = "2026-10-11"
 export const UPDATED = summary.generated_at
 export const longDate = (iso: string) => new Date(iso + "T00:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" })

@@ -10,7 +10,7 @@ import { DISCLAIMER, PUBLISHED, REPO_URL, UPDATED, longDate } from "@/lib/site"
 export const metadata: Metadata = {
   title: "McKinsey vs BCG vs Bain: a public-data benchmark",
   description: "An independent comparison of scale, US hiring, public-sector contracts and technical emphasis at McKinsey, BCG and Bain, built only from public sources.",
-  alternates: { canonical: "/benchmarks/mckinsey-vs-bcg-vs-bain" },
+  alternates: { canonical: "/research" },
 }
 
 const TOC = [
