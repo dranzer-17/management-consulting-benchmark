@@ -5,7 +5,7 @@ import { Footer } from "./footer"
 export function PageShell({ children, wide = false }: { children: ReactNode; wide?: boolean }) {
   return (
     <main id="main" className="px-4 pb-28 pt-12 md:pb-24 md:pl-[18.5rem] md:pr-10 md:pt-24">
-      <div className={`mx-auto ${wide ? "max-w-[1000px]" : "max-w-[720px]"}`}>{children}<Footer /></div>
+      <div className={wide ? "max-w-[1000px]" : "max-w-[720px]"}>{children}<Footer /></div>
     </main>
   )
 }
