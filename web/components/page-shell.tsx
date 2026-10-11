@@ -2,11 +2,15 @@ import type { ReactNode } from "react"
 import { Footer } from "./footer"
 
 /** Standard page frame: leaves room for the side rail on desktop and the tab bar on mobile. */
+/** Standard page frame: room for the side rail, and one footer that is identical on every page and sits at the bottom edge. */
 export function PageShell({ children, wide = false }: { children: ReactNode; wide?: boolean }) {
   return (
-    <main id="main" className="px-4 pb-28 pt-12 md:pb-24 md:pl-[18.5rem] md:pr-10 md:pt-24">
-      <div className={wide ? "max-w-[1000px]" : "max-w-[720px]"}>{children}<Footer /></div>
-    </main>
+    <div className="flex min-h-screen flex-col">
+      <main id="main" className="flex-1 px-4 pb-16 pt-12 md:pl-[18.5rem] md:pr-10 md:pt-24">
+        <div className={wide ? "max-w-[1000px]" : "max-w-[720px]"}>{children}</div>
+      </main>
+      <Footer />
+    </div>
   )
 }
 

@@ -4,7 +4,7 @@ import { DISCLAIMER, PORTFOLIO_URL, PUBLISHED, REPO_URL, UPDATED, longDate } fro
 
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-border pt-8 text-[13px] leading-relaxed text-muted-foreground">
+    <footer className="border-t border-border px-4 pb-24 pt-8 text-[13px] leading-relaxed text-muted-foreground md:ml-[15.5rem] md:pb-10 md:pl-12 md:pr-10">
       <p>{DISCLAIMER} Findings are descriptive and rest on proxies and, in places, unverified estimates; see each finding’s limitations.</p>
       <p className="mt-3">
         Research by Kavish Shah · Published {longDate(PUBLISHED)} · Last updated {longDate(UPDATED)}
