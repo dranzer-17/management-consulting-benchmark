@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "About", description: "Who produced t
 export default function About() {
   return (
     <PageShell>
-      <PageTitle eyebrow="About" title="About this research">
+      <PageTitle title="About this research">
         <p>This is an independent analysis by Kavish Shah, a student based in Mumbai, built as a reproducible public-data study of three consulting firms.</p>
       </PageTitle>
       <h2 className="mb-3 mt-10 text-2xl font-bold">Independence</h2>

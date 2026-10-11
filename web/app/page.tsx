@@ -21,7 +21,6 @@ export default function Home() {
   return (
     <PageShell wide>
       <div className="max-w-[720px]">
-        <p className="mb-3 text-[13px] font-medium uppercase tracking-[0.14em] text-muted-foreground">Independent research</p>
         <h1 className="text-3xl font-bold leading-tight md:text-[46px]">Management Consulting Competitive Benchmarking</h1>
         <p className="prose-report mt-5">
           An independent, data-driven examination of the observable differences in scale, talent signals, geographic footprint, and

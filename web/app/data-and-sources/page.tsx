@@ -16,7 +16,7 @@ export default function DataAndSources() {
   return (
     <PageShell wide>
       <div className="max-w-[720px]">
-        <PageTitle eyebrow="Data & Sources" title="What the study is built on">
+        <PageTitle title="What the study is built on">
           <p>{summary.sources} public sources, {summary.source_records.toLocaleString("en-US")} cleaned records and {summary.metric_definitions} defined metrics. Retrieval dates are in each source entry.</p>
         </PageTitle>
       </div>

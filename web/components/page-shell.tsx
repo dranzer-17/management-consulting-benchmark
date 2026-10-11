@@ -10,10 +10,9 @@ export function PageShell({ children, wide = false }: { children: ReactNode; wid
   )
 }
 
-export function PageTitle({ eyebrow, title, children }: { eyebrow?: string; title: string; children?: ReactNode }) {
+export function PageTitle({ title, children }: { title: string; children?: ReactNode }) {
   return (
     <header className="mb-10">
-      {eyebrow && <p className="mb-3 text-[13px] font-medium uppercase tracking-[0.14em] text-muted-foreground">{eyebrow}</p>}
       <h1 className="text-3xl font-bold leading-tight md:text-[44px]">{title}</h1>
       {children && <div className="prose-report mt-5">{children}</div>}
     </header>

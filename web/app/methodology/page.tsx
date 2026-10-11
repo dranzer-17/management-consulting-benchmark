@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import { CodeBlock } from "@/components/code-block"
 import { PageShell, PageTitle } from "@/components/page-shell"
 import { summary } from "@/lib/data"
 import { REPO_URL, BASE_PATH } from "@/lib/site"
@@ -11,17 +12,17 @@ const H = ({ children }: { children: string }) => <h2 className="mb-3 mt-12 text
 export default function Methodology() {
   return (
     <PageShell>
-      <PageTitle eyebrow="Methodology" title="How the numbers are produced">
+      <PageTitle title="How the numbers are produced">
         <p>Every number on this site comes from a scripted pipeline over public data. This page explains the stages and the rules the study follows.</p>
       </PageTitle>
 
       <H>Pipeline</H>
-      <pre className="overflow-x-auto rounded-md border border-border bg-card p-4 text-[13px] leading-relaxed">{`src/ingest/*.py   -> data/raw/      as-received public extracts (never edited)
+      <CodeBlock>{`src/ingest/*.py   -> data/raw/      as-received public extracts (never edited)
 src/clean.py      -> data/clean/    standardized tables, one strict firm-name matcher
 src/metrics.py    -> outputs/       metrics.csv and year-by-year tables
 src/figures.py    -> outputs/       charts
 src/validate.py   ->                checks raw, clean and metrics agree
-src/export_web.py -> web/data/      the JSON this website reads`}</pre>
+src/export_web.py -> web/data/      the JSON this website reads`}</CodeBlock>
 
       <H>Rules the study follows</H>
       <ol className="prose-report list-decimal space-y-3 pl-5 text-[16px]">

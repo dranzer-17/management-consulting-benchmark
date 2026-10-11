@@ -42,7 +42,6 @@ export default function Report() {
       <div className="grid gap-12 xl:grid-cols-[minmax(0,720px)_200px]">
         <article>
           <header>
-            <p className="mb-3 text-[13px] font-medium uppercase tracking-[0.14em] text-muted-foreground">Research report</p>
             <h1 className="text-3xl font-bold leading-tight md:text-[42px]">McKinsey, BCG and Bain: what public data can and cannot show</h1>
             <p className="mt-4 text-[14px] text-muted-foreground">
               Kavish Shah · Published {longDate(PUBLISHED)} · Last updated {longDate(UPDATED)} · <a className="underline underline-offset-2" href={REPO_URL} target="_blank" rel="noopener noreferrer">Source code</a>
