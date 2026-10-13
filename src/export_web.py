@@ -11,8 +11,9 @@ Outputs:
 Run: python -m src.export_web
 """
 import json
+import os
 import shutil
-from datetime import datetime, timezone
+from datetime import datetime
 
 import pandas as pd
 
@@ -62,7 +63,8 @@ def main():
     period = next(m["period"] for m in metrics if m["metric_id"] == "HIRE-001")   # e.g. "FY2015-2025": the analysis window
     fy_range = [int(x) for x in period.replace("FY", "").split("-")]
     summary = {
-        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+        # "Last updated" shown on the site: the local run date, or LAST_UPDATED=YYYY-MM-DD to set it explicitly
+        "generated_at": os.environ.get("LAST_UPDATED") or datetime.now().strftime("%Y-%m-%d"),
         "repo": REPO,
         "firms": 3,
         "sources": len(sources),
